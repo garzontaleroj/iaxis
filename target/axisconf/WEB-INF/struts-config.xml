@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+    <global-forwards>
+        <forward name="highlander" path="/WEB-INF/jsp/axishighlander.jsp"></forward>
+        <forward name="error" path="/WEB-INF/jsp/axiserror.jsp"></forward>
+        <forward name="ajax" path="/ajax.do?operation=form"></forward>
+        <forward name="json" path="/json.do?operation=form"></forward>
+        <forward name="ajaxp" path="/ajaxp.do?operation=form"></forward>
+        <forward name="http" path="/http.do?operation=form"></forward>
+        <!-- depr forward name="flujojump" path="/WEB-inf/jsp/axisflujojump.jsp"></forward-->
+        <forward name="jump" path="/WEB-inf/jsp/axisjump.jsp"></forward>
+        <forward name="cancelar" path="/flujodetrabajo.do?operation=cancelar"></forward>
+        <forward name="saltar" path="/flujodetrabajo.do?operation=saltar"></forward>
+        <forward name="formlauncher" path="/formlauncher.do?operation=form"></forward>
+        <forward name="axislogin" path="/axis.do?operation=init"></forward>
+        <forward name="exitautologin" path="/WEB-INF/jsp/axisexit.jsp"></forward>
+        <forward name="samllogout" path="/WEB-INF/jsp/axisexitorig.jsp"></forward>
+    </global-forwards>
+ <action-mappings>
+        <action path="/formlauncher" type="axis.mvc.control.FormlauncherAction" parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/axisformlauncher.jsp"></forward>
+            <forward name="launch" path="/WEB-INF/jsp/axisformlaunch.jsp"></forward>
+        </action>
+        <action path="/ayuda" type="axis.mvc.control.AyudaAction" parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/axisayuda.jsp"></forward>
+            <forward name="titulo" path="/WEB-INF/jsp/axisayudatitulo.jsp"></forward>
+        </action>
+        <action path="/flujodetrabajo" type="axis.mvc.control.FlujodetrabajoAction" parameter="operation" scope="request">
+            <forward name="cancelar" path="/main.do?operation=trabajo"></forward>
+        </action>
+        <action path="/ajax" type="axis.mvc.control.AjaxAction" scope="request" parameter="operation">
+            <forward name="form" path="/WEB-INF/jsp/axisajax.jsp"/>
+        </action>
+        <action path="/ajaxp" type="axis.mvc.control.AjaxpAction" scope="request" parameter="operation">
+            <forward name="form" path="/WEB-INF/jsp/axisajaxp.jsp"/>
+        </action>
+        <action path="/main" type="axis.mvc.control.MainAction" scope="request" parameter="operation">
+            <forward name="frames" path="/WEB-INF/jsp/axisframes.jsp"/>
+            <forward name="cabecera" path="/WEB-INF/jsp/axiscabecera.jsp"/>
+            <forward name="pie" path="/WEB-INF/jsp/axispie.jsp"/>
+            <forward name="blanc" path="/WEB-INF/jsp/axisblanc.jsp"/>
+            <forward name="trabajo" path="/WEB-INF/jsp/axistrabajo.jsp"/>
+            <forward name="menu" path="/WEB-INF/jsp/axismenu.jsp"/>
+            <forward name="submenu" path="/WEB-INF/jsp/axissubmenu.jsp"/>
+            <forward name="teaser" path="/WEB-INF/jsp/axisteaser.jsp"/>
+            <forward name="oculto" path="/WEB-INF/jsp/axisoculto.jsp"/>
+        </action>
+        <action path="/axis" scope="request" type="axis.mvc.control.AxisAction" parameter="operation">
+            <forward name="success" path="/index.jsp"/>
+            <forward name="form" path="/WEB-INF/jsp/axislogin.jsp"/>
+            <forward name="autologinform" path="/WEB-INF/jsp/axisautologin.jsp"/>
+            <forward name="aplicacion" path="/main.do?operation=frames"/>
+            <forward name="aplicacion_trabajo" path="/main.do?operation=trabajo"/>
+        </action>
+        <action path="/axisDemoValidacion" scope="request" type="axis.mvc.control.AxisAction">
+            <forward name="success" path="/WEB-INF/jsp/miForm.jsp"/>
+        </action>
+        <!--action path="/ayuda" type="axis.mvc.control.AyudaAction" scope="request" parameter="operation">
+            <forward name="form" path="/WEB-INF/jsp/ayuda.jsp"/>
+        </action-->
+        <!--action path="/http" type="axis.mvc.control.HttpAction" scope="request" parameter="operation">
+            <forward name="form" path="/WEB-INF/jsp/http.jsp"/>
+        </action-->
+        <action path="/parsealiterales" scope="request" type="axis.mvc.control.ParsealiteralesAction" parameter="operation">
+            <forward name="html" path="/WEB-INF/jsp/parseaLiteralesHtml.jsp"/>
+            <forward name="text" path="/WEB-INF/jsp/parseaLiteralesText.jsp"/>
+        </action>
+        <action path="/json" type="axis.mvc.control.JSONAction" scope="request" parameter="operation">
+            <forward name="form" path="/WEB-INF/jsp/json.jsp"/>
+        </action>
+        <action path="/index" forward="/index.jsp"/>
+  </action-mappings>        
+  <controller processorClass="axis.daemon.AxisRequestProcessor"></controller>
+    <message-resources parameter="axistest.ApplicationResources"/>
+    <plug-in className="axis.daemon.AxisPlugIn"></plug-in>
+</struts-config>

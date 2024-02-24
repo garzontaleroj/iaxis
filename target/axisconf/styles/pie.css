@@ -1,0 +1,26 @@
+/*
+*  Fichero: pie.css
+*  @author <a href = "mailto:lcalvo@csi-ti.com">Luz Calvo</a> 
+*  @author <a href = "mailto:xgallego@csi-ti.com">Xavi Gallego</a> 
+*  
+*  Estilos genéricos para el contenido del aplicativo (pie del frame)
+*
+*  Fecha: 22/10/2007
+*/
+.pie {
+	/* line-height: 24px; */
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-top-color: #DDDDDD;
+	border-right-color: #DDDDDD;
+	border-bottom-color: #DDDDDD;
+	border-left-color: #DDDDDD;
+	text-align: center;
+}
+.pie_pagina {
+	width: 95%;
+        /*margin:10px auto 10px auto;*/
+}

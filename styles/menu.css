@@ -1,0 +1,85 @@
+/*
+*  Fichero: menu.css
+*  @author <a href = "mailto:lcalvo@csi-ti.com">Luz Calvo</a> 
+*  @author <a href = "mailto:xgallego@csi-ti.com">Xavi Gallego</a> 
+*  
+*  Estilos genéricos para el contenido del menu general del aplicativo
+*
+*  Fecha: 22/10/2007
+*/
+.menu{
+    font-size: 11px;
+    line-height: 20px;
+    width: 300px;
+    float: left;
+    text-align: left;
+    border-width: 1px 1px 1px 1px;
+    border-bottom-style: solid;
+}
+
+/* Correspondiente a Menu */
+.menusubtitulo {
+    color: #FFFFFF;
+    background-color: #666666;/*#006000;*/
+    padding-left: 5px;
+    border-top-color: #CCCCCC;
+    border-right-color: #CCCCCC;
+    border-bottom-color: #CCCCCC;
+    border-left-color: #CCCCCC;
+}
+
+.menuitem {
+    background-color: #CCCCCC;/* #84D600; */
+    margin: 0px;
+    padding: 0px;
+    border-top-color: #FFFFFF;
+    border-right-color: #FFFFFF;
+    border-bottom-color: #EEEEEE;
+    border-left-color: #FFFFFF;
+    padding-bottom:2px;
+}
+
+
+.item {
+    background-color: #D7FEAB;
+    margin: 0px;
+    padding: 0px;
+    border-top-color: #FFFFFF;
+    border-right-color: #FFFFFF;
+    border-bottom-color: #EEEEEE;
+    border-left-color: #FFFFFF;
+    padding-bottom:2px;
+}
+
+
+/* Correspondiente a Menu Primer nivel q se ve, por ejemplo "Salir" */ 
+.menuItemLv2 {
+	color: #FFFFFF;
+	background-color:#db0e0e; /*#ea2105;*/ 
+	padding-left: 5px;
+	border-color: #CCCCCC; 
+}
+
+/* Correspondiente a Menu Segundo nivel q se ve, por ejemplo "Nueva produccion" */ 
+.menuItemLv3 {/* ecg */
+	background-color: #C0C0C0; /*#84d600; #d0d0d0; #DDDDDD cambio jr*/
+	margin: 0px;
+	padding: 0px;
+	border-color: #FFFFFF;
+	padding-bottom:2px;
+	cursor: pointer;
+	color:white  /*letra menuItem3*/
+}
+
+/* Correspondiente a Menu tercer nivel q se ve */ 
+.menuItemLv4 {/* ecg */
+	background-color: #DDDDDD; /* #BECD81; *//* #c8d600; */
+	margin-left: 0px;
+	width: 300px; 
+	padding: 0px;
+	border-color: #FFFFFF;
+	padding-bottom:2px;
+	cursor: pointer;
+	color:white;
+}
+/* modal estandard */

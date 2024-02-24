@@ -1,0 +1,73 @@
+<%/*
+*  Fichero: axiscabecera.jsp
+*  @author <a href = "mailto:echristen@csi-ti.com">elmar Christen</a> 
+*  @author <a href = "mailto:xgallego@csi-ti.com">Xavi Gallego</a>
+*  @author <a href = "mailto:rkirchner@csi-ti.com">Roger Kirchner</a> 
+*  
+*  Código asociado a la cabecera del aplicativo
+*
+*  Fecha: 22/10/2007
+*/%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page contentType="text/html;charset=windows-1252" errorPage="/WEB-INF/jsp/axiserror.jsp"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<fmt:setLocale value="${sessionScope.__locale}"/>
+<fmt:setBundle basename="axis.bundle.Mensajes"/>
+<html>
+    <head>
+    
+<script language="Javascript" type="text/javascript" src="scripts/general.js"></script>
+<link rel="stylesheet" href="styles/axisnt.css"></link>
+<link rel="stylesheet" href="styles/cabecera.css"></link>
+<link rel="stylesheet" href="styles/genericosHtml.css"></link>
+<script language="Javascript" type="text/javascript">
+function f_onunload() {
+}
+function f_onload() {
+    //alert("f_onload()")
+}
+
+</script>
+        
+        
+    </head>
+    <body style="width:100%;" onunload="f_onunload()" onload="f_onload()">
+        <form name="miForm" action="">
+<div style="background-color: #002261;">
+<table class="base area" cellspacing="0" cellpadding="0" border="0" style="background-color:#FFFFFF; width:95%" align="center">
+<tr style="height:45px">
+<td style="background-color:#002261;">&nbsp;</td>
+<td style="background-color:#002261;">&nbsp;<img src="images/logo1.gif" ></td>
+<td style="text-align:right;background-color:#002261;"><span class="txt_aplicativo"><fmt:message key="aplicacion.nombre" /></span></td>
+</tr>
+</table>
+</div>
+<table class="zona" align="center" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<table cellspacing="0" cellpadding="0" align="center" style="width:97%;background-color:#676767;">
+    <tr style="height:20px;text-align:right">
+        <td style="color:#cccccc;">
+        &nbsp;<b>DATOS:</b> <fmt:message key="9902948" />:<b>${sessionScope.__usuario.nombre}</b> <fmt:message key="9903497" />:<b>${sessionScope.__usuario.remoteip}</b> <fmt:message key="9903501" />:<b><fmt:formatDate value="${sessionScope.__usuario.factuallogin}" pattern="dd/MM/yyyy hh:mm"/></b> <fmt:message key="9903504" />:<b><fmt:formatDate value="${sessionScope.__usuario.fultimologin}" pattern="dd/MM/yyyy hh:mm"/></b> &nbsp;&nbsp;
+        </td>
+        <c:choose>
+        <c:when test="${sessionScope.__usuario.entorno=='TEST'}"><td style="width:190px;text-align:center;background-color:lightgreen"><fmt:message key="111381" /> <i>TEST</i></td></c:when>        
+        <c:when test="${sessionScope.__usuario.entorno=='PROD'}"><td style="width:190px;text-align:center;background-color:transparent"><fmt:message key="111381" /> <i><fmt:message key="100590" /></i></td></c:when>
+        <c:otherwise><td style="width:190px;text-align:center;background-color:red">${sessionScope.__usuario.entorno}</td></c:otherwise>
+        </c:choose>
+    </tr>
+</table>
+<table cellspacing="0" align="center" cellpadding="0" style="width:95.2%;background-color: #FFFFFF;">
+    <tr style="height:6px">
+        <td></td>
+    </tr>
+</table>
+</td>
+</tr>
+</div>
+
+        </form>
+    </body>
+</html>
+<%@ page contentType="text/html;charset=windows-1252"%>

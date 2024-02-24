@@ -1,0 +1,2878 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+    <global-forwards>
+        <forward name="error" path="/WEB-INF/jsp/axiserror.jsp"></forward>
+    </global-forwards>
+    <action-mappings>
+        <!--****************************************** GENÉRICO ***////////////*****************************************-->
+        <action path="/modal_axiscom001"
+                type="axis.mvc.control.modal.Axiscom001Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscom001.jsp"/>
+        </action>
+        
+        <action path="/modal_axisciiu001"
+                type="axis.mvc.control.modal.Axisciiu001Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisciiu001.jsp"/>
+        </action>
+        
+        <!-- IAXIS-13881 : Cambios de facturacion electronica : start -->        
+        <action path="/modal_axisfiscales_adquiriente001"
+                type="axis.mvc.control.modal.Axisfiscales_adquiriente001Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfiscales_adquiriente001.jsp"/>
+        </action>
+		<action path="/modal_axisper053"
+                type="axis.mvc.control.modal.Axisper053Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper053.jsp"/>
+        </action>        
+        <!-- IAXIS-13881 : Cambios de facturacion electronica : end -->
+        
+        <action path="/modal_axiscom002"
+                type="axis.mvc.control.modal.Axiscom002Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscom002.jsp"/>
+        </action>
+        <!--****************************************** PERSONAS ***////////////*****************************************-->
+        <action path="/modal_axisper001"
+                type="axis.mvc.control.modal.Axisper001Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper001.jsp"/>
+        </action>
+        <action path="/modal_axisper002"
+                type="axis.mvc.control.modal.Axisper002Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper002.jsp"/>
+        </action>
+        <action path="/modal_axisper004"
+                type="axis.mvc.control.modal.Axisper004Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper004.jsp"/>
+        </action>
+        <action path="/modal_axisper005"
+                type="axis.mvc.control.modal.Axisper005Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper005.jsp"/>
+        </action>
+        <action path="/modal_axisper006"
+                type="axis.mvc.control.modal.Axisper006Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper006.jsp"/>
+        </action>
+        <action path="/modal_axisper007"
+                type="axis.mvc.control.modal.Axisper007Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper007.jsp"/>
+        </action>
+        <action path="/modal_axisper008"
+                type="axis.mvc.control.modal.Axisper008Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper008.jsp"/>
+        </action>
+        <action path="/modal_axisper010"
+                type="axis.mvc.control.modal.Axisper010Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper010.jsp"/>
+        </action>
+        <action path="/modal_axisper011"
+                type="axis.mvc.control.modal.Axisper011Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper011.jsp"/>
+        </action>
+        <action path="/modal_axisper012"
+                type="axis.mvc.control.modal.Axisper012Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper012.jsp"/>
+        </action>
+        <action path="/modal_axisper013"
+                type="axis.mvc.control.modal.Axisper013Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper013.jsp"/>
+        </action>
+        <action path="/modal_axisper014"
+                type="axis.mvc.control.modal.Axisper014Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper014.jsp"/>
+        </action>
+        <action path="/modal_axisper015"
+                type="axis.mvc.control.modal.Axisper015Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper015.jsp"/>
+        </action>
+        <action path="/modal_axisper016"
+                type="axis.mvc.control.modal.Axisper016Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper016.jsp"/>
+        </action>
+        <action path="/modal_axisper018"
+                type="axis.mvc.control.modal.Axisper018Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper018.jsp"/>
+        </action>
+        <action path="/modal_axisper019"
+                type="axis.mvc.control.modal.Axisper019Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper019.jsp"/>
+        </action>
+	<action path="/modal_axisctr222"
+                type="axis.mvc.control.modal.Axisctr222Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr222.jsp"/>
+        </action>
+        <action path="/modal_axisper020"
+                type="axis.mvc.control.modal.Axisper020Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper020.jsp"/>
+        </action>
+        <action path="/modal_axisper021"
+                type="axis.mvc.control.modal.Axisper021Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper021.jsp"/>
+        </action>
+        <action path="/modal_axiscomi021"
+                type="axis.mvc.control.modal.Axiscomi021Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscomi021.jsp"/>
+        </action>
+        <action path="/modal_axisper022"
+                type="axis.mvc.control.modal.Axisper022Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper022.jsp"/>
+        </action>
+        <action path="/modal_axisper023"
+                type="axis.mvc.control.modal.Axisper023Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper023.jsp"/>
+        </action>
+        <action path="/modal_axisper025"
+                type="axis.mvc.control.modal.Axisper025Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper025.jsp"/>
+        </action>
+        <action path="/modal_axisper026"
+                type="axis.mvc.control.modal.Axisper026Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper026.jsp"/>
+        </action>
+        <action path="/modal_axisper027"
+                type="axis.mvc.control.modal.Axisper027Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper027.jsp"/>
+        </action>
+        <action path="/modal_axisper028"
+                type="axis.mvc.control.modal.Axisper028Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper028.jsp"/>
+        </action>
+        <action path="/modal_axisper029"
+                type="axis.mvc.control.modal.Axisper029Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper029.jsp"/>
+        </action>
+        <action path="/modal_axisper030"
+                type="axis.mvc.control.modal.Axisper030Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper030.jsp"/>
+        </action>
+        <action path="/modal_axisper032"
+                type="axis.mvc.control.modal.Axisper032Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper032.jsp"/>
+        </action>
+        <action path="/modal_axisper035"
+                type="axis.mvc.control.modal.Axisper035Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper035.jsp"/>
+        </action>
+        <action path="/modal_axisper036"
+                type="axis.mvc.control.modal.Axisper036Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper036.jsp"/>
+        </action>
+        <action path="/modal_axisper038"
+                type="axis.mvc.control.modal.Axisper038Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper038.jsp"/>
+        </action>
+        <action path="/modal_axisper039"
+                type="axis.mvc.control.modal.Axisper039Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper039.jsp"/>
+        </action>
+		<!--*******INI CONF-186*********-->
+        <action path="/modal_axisper044"
+                type="axis.mvc.control.modal.Axisper044Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper044.jsp"/>
+        </action>
+        <action path="/modal_axisper045"
+                type="axis.mvc.control.modal.Axisper045Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper045.jsp"/>
+        </action>
+        <action path="/modal_axisper046"
+                type="axis.mvc.control.modal.Axisper046Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper046.jsp"/>
+        </action>
+        <!--*******FIN CONF-186**********-->
+        <!--****************************************  PROFESIONALES  *********************************************************************-->
+        <action path="/modal_axisprf003"
+                type="axis.mvc.control.modal.Axisprf003Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf003.jsp"/>
+        </action>
+        <action path="/modal_axisprf004"
+                type="axis.mvc.control.modal.Axisprf004Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf004.jsp"/>
+        </action>
+        <action path="/modal_axisprf005"
+                type="axis.mvc.control.modal.Axisprf005Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf005.jsp"/>
+        </action>
+        <action path="/modal_axisprf006"
+                type="axis.mvc.control.modal.Axisprf006Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf006.jsp"/>
+        </action>
+        <action path="/modal_axisprf007"
+                type="axis.mvc.control.modal.Axisprf007Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf007.jsp"/>
+        </action>
+        <action path="/modal_axisprf009"
+                type="axis.mvc.control.modal.Axisprf009Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf009.jsp"/>
+        </action>
+        <action path="/modal_axisprf010"
+                type="axis.mvc.control.modal.Axisprf010Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf010.jsp"/>
+        </action>
+        <action path="/modal_axisprf011"
+                type="axis.mvc.control.modal.Axisprf011Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf011.jsp"/>
+        </action>
+        <action path="/modal_axisprf008"
+                type="axis.mvc.control.modal.Axisprf008Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf008.jsp"/>
+        </action>
+        <action path="/modal_axisprf012"
+                type="axis.mvc.control.modal.Axisprf012Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf012.jsp"/>
+        </action>
+        <action path="/modal_axisprf000"
+                type="axis.mvc.control.modal.Axisprf000Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf000.jsp"/>
+        </action>
+        <action path="/modal_axisprf002"
+                type="axis.mvc.control.modal.Axisprf002Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf002.jsp"/>
+        </action>
+        <action path="/modal_axisprf013"
+                type="axis.mvc.control.modal.Axisprf013Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf013.jsp"/>
+        </action>
+        <action path="/modal_axisprf014"
+                type="axis.mvc.control.modal.Axisprf014Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf014.jsp"/>
+        </action>
+        <action path="/modal_axisprf015"
+                type="axis.mvc.control.modal.Axisprf015Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf015.jsp"/>
+        </action>
+        <action path="/modal_axisprf016"
+                type="axis.mvc.control.modal.Axisprf016Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf016.jsp"/>
+        </action>
+        <action path="/modal_axisprf105"
+                type="axis.mvc.control.modal.Axisprf105Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf105.jsp"/>
+        </action>
+        <action path="/modal_axisprf102"
+                type="axis.mvc.control.modal.Axisprf102Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf102.jsp"/>
+        </action>
+        <action path="/modal_axisprf103"
+                type="axis.mvc.control.modal.Axisprf103Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf103.jsp"/>
+        </action>
+        <action path="/modal_axisprf106"
+                type="axis.mvc.control.modal.Axisprf106Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf106.jsp"/>
+        </action>
+        <action path="/modal_axisprf101"
+                type="axis.mvc.control.modal.Axisprf101Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf101.jsp"/>
+        </action>
+        <action path="/modal_axisprf107"
+                type="axis.mvc.control.modal.Axisprf107Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisprf107.jsp"/>
+        </action>
+        <!--****************************************  RETORNOS *********************************************************************-->
+        <action path="/modal_axisret001"
+                type="axis.mvc.control.modal.Axisret001Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisret001.jsp"/>
+        </action>
+        <action path="/modal_axisret003"
+                type="axis.mvc.control.modal.Axisret003Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisret003.jsp"/>
+        </action>
+        <action path="/modal_axisret004"
+                type="axis.mvc.control.modal.Axisret004Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisret004.jsp"/>
+        </action>
+        <action path="/modal_axisret005"
+                type="axis.mvc.control.modal.Axisret005Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisret005.jsp"/>
+        </action>
+        <action path="/modal_axisret006"
+                type="axis.mvc.control.modal.Axisret006Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisret006.jsp"/>
+        </action>
+        <action path="/modal_axisctr193"
+                type="axis.mvc.control.modal.Axisctr193Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr193.jsp"/>
+        </action>
+		<action path="/modal_axisctr214"
+                type="axis.mvc.control.modal.Axisctr214Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr214.jsp"/>
+        </action>
+        
+         <action path="/modal_axisctr215"
+                type="axis.mvc.control.modal.Axisctr215Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr215.jsp"/>
+        </action>
+
+	<action path="/modal_axisctr218"
+                type="axis.mvc.control.modal.Axisctr218Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr218.jsp"/>
+        </action>
+        
+        <!--****************************************** CONTRATACIÓN VIDA Y RIESGO ********************************************-->
+        <action path="/modal_axisctr010"
+                type="axis.mvc.control.modal.Axisctr010Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr010.jsp"/>
+        </action>
+        <action path="/modal_axisctr011"
+                type="axis.mvc.control.modal.Axisctr011Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr011.jsp"/>
+        </action>
+        <action path="/modal_axisctr012"
+                type="axis.mvc.control.modal.Axisctr012Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr012.jsp"/>
+        </action>
+        <action path="/modal_axisctr013"
+                type="axis.mvc.control.modal.Axisctr013Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr013.jsp"/>
+        </action>
+        <action path="/modal_axisctr014"
+                type="axis.mvc.control.modal.Axisctr014Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr014.jsp"/>
+        </action>
+        <action path="/modal_axisctr076"
+                type="axis.mvc.control.modal.Axisctr076Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr076.jsp"/>
+        </action>
+        <action path="/modal_axisctr017"
+                type="axis.mvc.control.modal.Axisctr017Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr017.jsp"/>
+        </action>
+        <action path="/modal_axisctr019"
+                type="axis.mvc.control.modal.Axisctr019Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr019.jsp"/>
+        </action>
+        <action path="/modal_axisctr022"
+                type="axis.mvc.control.modal.Axisctr022Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr022.jsp"/>
+        </action>
+        <action path="/modal_axisctr021"
+                type="axis.mvc.control.modal.Axisctr021Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr021.jsp"/>
+        </action>
+        <action path="/modal_axisctr023"
+                type="axis.mvc.control.modal.Axisctr023Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr023.jsp"/>
+        </action>
+        <action path="/modal_axisctr025"
+                type="axis.mvc.control.modal.Axisctr025Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr025.jsp"/>
+        </action>
+        <action path="/modal_axisctr173"
+                type="axis.mvc.control.modal.Axisctr173Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr173.jsp"/>
+        </action>
+        <action path="/modal_axisctr181"
+                type="axis.mvc.control.modal.Axisctr181Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr181.jsp"/>
+        </action>
+        <action path="/modal_axisctr188"
+                type="axis.mvc.control.modal.Axisctr188Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr188.jsp"/>
+        </action>
+        <action path="/modal_axisctr174"
+                type="axis.mvc.control.modal.Axisctr174Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr174.jsp"/>
+        </action>
+        <action path="/modal_axisctr176"
+                type="axis.mvc.control.modal.Axisctr176Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr176.jsp"/>
+        </action>
+        <action path="/modal_axisctr029"
+                type="axis.mvc.control.modal.Axisctr029Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr029.jsp"/>
+        </action>
+        <action path="/modal_axisctr030"
+                type="axis.mvc.control.modal.Axisctr030Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr030.jsp"/>
+        </action>
+        <action path="/modal_axisctr039"
+                type="axis.mvc.control.modal.Axisctr039Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr039.jsp"/>
+        </action>
+        <action path="/modal_axisctr101"
+                type="axis.mvc.control.modal.Axisctr101Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr101.jsp"/>
+        </action>
+        <action path="/modal_axisctr164"
+                type="axis.mvc.control.modal.Axisctr164Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr164.jsp"/>
+        </action>
+        <action path="/modal_axisctr165"
+                type="axis.mvc.control.modal.Axisctr165Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr165.jsp"/>
+        </action>
+        <!-- bfp bug 21947 ini -->
+        <action path="/modal_axisctr189"
+                type="axis.mvc.control.modal.Axisctr189Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr189.jsp"/>
+        </action>
+        <!-- bfp bug 21947 fi -->
+        <action path="/modal_axisctr190"
+                type="axis.mvc.control.modal.Axisctr190Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr190.jsp"/>
+        </action>
+        <!-- ***************************************** MODULO CAJA *********************************** -->
+        <action path="/modal_axiscaj010"
+                type="axis.mvc.control.modal.Axiscaj010Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscaj010.jsp"/>
+        </action>
+        <action path="/modal_axiscaj011"
+                type="axis.mvc.control.modal.Axiscaj011Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscaj011.jsp"/>
+        </action>
+        <action path="/modal_axiscaj015"
+                type="axis.mvc.control.modal.Axiscaj015Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscaj015.jsp"/>
+        </action>
+		<action path="/modal_axiscaj017"
+                type="axis.mvc.control.modal.Axiscaj017Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscaj017.jsp"/>
+        </action>
+        <!--******************************************* FIN MODULO CAJA    *************************************************-->
+        <!-- ***************************************** LISTAS RESTRINGIDAS *********************************** -->
+        <action path="/modal_axisctr201"
+                type="axis.mvc.control.modal.Axisctr201Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr201.jsp"/>
+        </action>
+        <action path="/modal_axisctr203"
+                type="axis.mvc.control.modal.Axisctr203Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr203.jsp"/>
+        </action>
+        <!-- ***************************************** LISTAS RESTRINGIDAS AUTOS *********************************** -->
+        <action path="/modal_axisctr210"
+                type="axis.mvc.control.modal.Axisctr210Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr210.jsp"/>
+        </action>
+        <action path="/modal_axisctr212"
+                type="axis.mvc.control.modal.Axisctr212Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr212.jsp"/>
+        </action>
+        <!-- ***************************************** FIRMA DIGITAL ***************************************** -->
+        <action path="/modal_axisctr186"
+                type="axis.mvc.control.modal.Axisctr186Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr186.jsp"/>
+        </action>
+        <!--****************************************** SINIESTROS ********************************************-->
+        <action path="/modal_axissin002"
+                type="axis.mvc.control.modal.Axissin002Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin002.jsp"/>
+        </action>
+        <action path="/modal_axissin049"
+                type="axis.mvc.control.modal.Axissin049Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin049.jsp"/>
+        </action>
+        <action path="/modal_axissin042"
+                type="axis.mvc.control.modal.Axissin042Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin042.jsp"/>
+        </action>
+        <action path="/modal_axissin050"
+                type="axis.mvc.control.modal.Axissin050Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin050.jsp"/>
+        </action>
+        <action path="/modal_axissin055"
+                type="axis.mvc.control.modal.Axissin055Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin055.jsp"/>
+        </action>
+        <action path="/modal_axissin056"
+                type="axis.mvc.control.modal.Axissin056Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin056.jsp"/>
+        </action>
+        <action path="/modal_axissin051"
+                type="axis.mvc.control.modal.Axissin051Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin051.jsp"/>
+        </action>
+        <action path="/modal_axissin043"
+                type="axis.mvc.control.modal.Axissin043Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin043.jsp"/>
+        </action>
+        <action path="/modal_axissin045"
+                type="axis.mvc.control.modal.Axissin045Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin045.jsp"/>
+            <forward name="cargar_servicios"
+                     path="/WEB-INF/jsp/modal/axissin045_b.jsp"/>
+        </action>
+        <action path="/modal_axissin046"
+                type="axis.mvc.control.modal.Axissin046Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin046.jsp"/>
+        </action>
+        <action path="/modal_axissin047"
+                type="axis.mvc.control.modal.Axissin047Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin047.jsp"/>
+        </action>
+        <action path="/modal_axissin004"
+                type="axis.mvc.control.modal.Axissin004Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin004.jsp"/>
+        </action>
+         <action path="/modal_axissin058"
+                type="axis.mvc.control.modal.Axissin058Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin058.jsp"/>
+        </action>
+        <action path="/modal_axisimprimir"
+                type="axis.mvc.control.modal.AxisimprimirAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisimprimir.jsp"/>
+            <forward name="tunnel" path="/WEB-INF/jsp/modal/axisimprimir.jsp"/>
+        </action>
+        <action path="/modal_axisgedox"
+                type="axis.mvc.control.modal.AxisgedoxAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisgedox.jsp"/>
+            <forward name="tunnel" path="/WEB-INF/jsp/modal/axisgedox.jsp"/>
+        </action>
+        <action path="/modal_axissin034"
+                type="axis.mvc.control.modal.Axissin034Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin034.jsp"/>
+        </action>
+        <action path="/modal_axissin036"
+                type="axis.mvc.control.modal.Axissin036Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin036.jsp"/>
+        </action>
+        <action path="/modal_axissin037"
+                type="axis.mvc.control.modal.Axissin037Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin037.jsp"/>
+        </action>
+        <action path="/modal_axissin038"
+                type="axis.mvc.control.modal.Axissin038Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin038.jsp"/>
+        </action>
+        <action path="/modal_axissin044"
+                type="axis.mvc.control.modal.Axissin044Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin044.jsp"/>
+        </action>
+        <action path="/modal_axissin052"
+                type="axis.mvc.control.modal.Axissin052Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin052.jsp"/>
+        </action>
+        <action path="/modal_axissin053"
+                type="axis.mvc.control.modal.Axissin053Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin053.jsp"/>
+        </action>
+        <action path="/modal_axissin057"
+                type="axis.mvc.control.modal.Axissin057Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin057.jsp"/>
+        </action>
+        <action path="/modal_axissin059"
+                type="axis.mvc.control.modal.Axissin059Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin059.jsp"/>
+        </action>
+		<action path="/modal_axissin060"
+                type="axis.mvc.control.modal.Axissin060Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin060.jsp"/>
+        </action>
+        <!-- **************************************** PERSONAS ASOC. SINIESTRO ******************************************************-->
+        <action path="/modal_axissin039"
+                type="axis.mvc.control.modal.Axissin039Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin039.jsp"/>
+        </action>
+        <!-- **************************************** PRESTACIONES SINIESTRO ******************************************************-->
+        <action path="/modal_axissin040"
+                type="axis.mvc.control.modal.Axissin040Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin040.jsp"/>
+        </action>
+        <!--****************************************  MANT.CAUSAS   ****************************************************************-->
+        <action path="/modal_axissin029"
+                type="axis.mvc.control.modal.Axissin029Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin029.jsp"/>
+        </action>
+        <action path="/modal_axissin031"
+                type="axis.mvc.control.modal.Axissin031Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin031.jsp"/>
+        </action>
+        <!--****************************************  RIESGOS INNOMINADOS ****************************************************************-->
+        <action path="/modal_axisctr042"
+                type="axis.mvc.control.modal.Axisctr042Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr042.jsp"/>
+        </action>
+        <action path="/modal_axisctr043"
+                type="axis.mvc.control.modal.Axisctr043Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr043.jsp"/>
+        </action>
+        <!--****************************************** COBRO ONLINE ********************************************-->
+        <action path="/modal_axisctr049"
+                type="axis.mvc.control.modal.Axisctr049Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr049.jsp"/>
+        </action>
+        <!--****************************************** CONSULTA PAGOS RENTA ********************************************-->
+        <action path="/modal_axisctr084"
+                type="axis.mvc.control.modal.Axisctr084Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr084.jsp"/>
+        </action>
+        <action path="/modal_axisctr086"
+                type="axis.mvc.control.modal.Axisctr086Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr086.jsp"/>
+        </action>
+        <action path="/modal_axisctr087"
+                type="axis.mvc.control.modal.Axisctr087Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr087.jsp"/>
+        </action>
+        <action path="/modal_axisctr088"
+                type="axis.mvc.control.modal.Axisctr088Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr088.jsp"/>
+        </action>
+		<!--**************************************CITAS MEDICAS **************************************-->
+        <action path="/modal_axisctr307"
+                type="axis.mvc.control.modal.Axisctr307Action" parameter="operation"
+                scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr307.jsp"/>
+       </action>
+        <!--****************************************** CONSULTA PRENOTIFICACIONES ********************************************-->
+        <action path="/modal_axisadm067"
+                type="axis.mvc.control.modal.Axisadm067Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm067.jsp"/>
+        </action>
+        <action path="/modal_axisadm071"
+                type="axis.mvc.control.modal.Axisadm071Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm071.jsp"/>
+        </action>
+        <action path="/modal_axisadm077"
+                type="axis.mvc.control.modal.Axisadm077Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm077.jsp"/>
+        </action>
+        <!--****************************************** CONSULTA RECIBOS ********************************************-->
+        <action path="/modal_axisadm001"
+                type="axis.mvc.control.modal.Axisadm001Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm001.jsp"/>
+        </action>
+        <action path="/modal_axisadm036"
+                type="axis.mvc.control.modal.Axisadm036Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm036.jsp"/>
+        </action>
+        <!--****************************************** IMPAGADOS RECIBOS ********************************************-->
+        <action path="/modal_axisadm041"
+                type="axis.mvc.control.modal.Axisadm041Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm041.jsp"/>
+        </action>
+        <action path="/modal_axisadm042"
+                type="axis.mvc.control.modal.Axisadm042Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm042.jsp"/>
+        </action>
+        <action path="/modal_axisadm043"
+                type="axis.mvc.control.modal.Axisadm043Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm043.jsp"/>
+        </action>
+        <action path="/modal_axisadm044"
+                type="axis.mvc.control.modal.Axisadm044Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm044.jsp"/>
+        </action>
+        <!--************************************ IMPRESIÓN RECIBOS PENDIENTES **************************************-->
+        <action path="/modal_axisctr052"
+                type="axis.mvc.control.modal.Axisctr052Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr052.jsp"/>
+        </action>
+        <!--************************************ AGENDA DE POLIZA **************************************-->
+        <action path="/modal_axisctr056"
+                type="axis.mvc.control.modal.Axisctr056Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr056.jsp"/>
+        </action>
+        <!--****************************************** CONTABILIDAD   **********************************************-->
+        <action path="/modal_axisadm007"
+                type="axis.mvc.control.modal.Axisadm007Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm007.jsp"/>
+        </action>
+        <action path="/modal_axisadm009"
+                type="axis.mvc.control.modal.Axisadm009Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm009.jsp"/>
+        </action>
+        <action path="/modal_axisadm010"
+                type="axis.mvc.control.modal.Axisadm010Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm010.jsp"/>
+        </action>
+        <action path="/modal_axisadm053"
+                type="axis.mvc.control.modal.Axisadm053Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm053.jsp"/>
+        </action>
+        <action path="/modal_axisadm082"
+                type="axis.mvc.control.modal.Axisadm082Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm082.jsp"/>
+        </action>
+        <action path="/modal_axisadm083"
+                type="axis.mvc.control.modal.Axisadm083Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm083.jsp"/>
+        </action>
+        <!--****************************************** MANTENIMIENTOS ********************************************-->
+        <action path="/modal_axismnt010"
+                type="axis.mvc.control.modal.Axismnt010Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismnt010.jsp"/>
+        </action>
+        <action path="/modal_axismnt009"
+                type="axis.mvc.control.modal.Axismnt009Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismnt009.jsp"/>
+        </action>
+        <action path="/modal_axismnt011"
+                type="axis.mvc.control.modal.Axismnt011Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismnt011.jsp"/>
+        </action>
+        <action path="/modal_axismnt022"
+                type="axis.mvc.control.modal.Axismnt022Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismnt022.jsp"/>
+        </action>
+        <action path="/modal_axismnt023"
+                type="axis.mvc.control.modal.Axismnt023Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismnt023.jsp"/>
+        </action>
+        <!--****************************************** MANTENIMIENTOS ********************************************-->
+        <action path="/modal_axispro002"
+                type="axis.mvc.control.modal.Axispro002Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro002.jsp"/>
+        </action>
+        <action path="/modal_axispro003"
+                type="axis.mvc.control.modal.Axispro003Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro003.jsp"/>
+        </action>
+        <action path="/modal_axispro004"
+                type="axis.mvc.control.modal.Axispro004Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro004.jsp"/>
+        </action>
+        <action path="/modal_axispro005"
+                type="axis.mvc.control.modal.Axispro005Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro005.jsp"/>
+        </action>
+        <action path="/modal_axispro006"
+                type="axis.mvc.control.modal.Axispro006Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro006.jsp"/>
+        </action>
+        <action path="/modal_axispro007"
+                type="axis.mvc.control.modal.Axispro007Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro007.jsp"/>
+        </action>
+        <action path="/modal_axispro008"
+                type="axis.mvc.control.modal.Axispro008Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro008.jsp"/>
+        </action>
+        <action path="/modal_axispro009"
+                type="axis.mvc.control.modal.Axispro009Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro009.jsp"/>
+        </action>
+        <action path="/modal_axispro011"
+                type="axis.mvc.control.modal.Axispro011Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro011.jsp"/>
+        </action>
+        <action path="/modal_axispro012"
+                type="axis.mvc.control.modal.Axispro012Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro012.jsp"/>
+        </action>
+        <action path="/modal_axispro013"
+                type="axis.mvc.control.modal.Axispro013Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro013.jsp"/>
+        </action>
+        <action path="/modal_axispro014"
+                type="axis.mvc.control.modal.Axispro014Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro014.jsp"/>
+        </action>
+        <action path="/modal_axispro015"
+                type="axis.mvc.control.modal.Axispro015Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro015.jsp"/>
+        </action>
+        <action path="/modal_axispro016"
+                type="axis.mvc.control.modal.Axispro016Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro016.jsp"/>
+        </action>
+        <action path="/modal_axispro017"
+                type="axis.mvc.control.modal.Axispro017Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro017.jsp"/>
+        </action>
+        <action path="/modal_axispro018"
+                type="axis.mvc.control.modal.Axispro018Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro018.jsp"/>
+        </action>
+        <action path="/modal_axispro019"
+                type="axis.mvc.control.modal.Axispro019Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro019.jsp"/>
+        </action>
+        <action path="/modal_axispro018_buscador"
+                type="axis.mvc.control.modal.Axispro018_buscadorAction"
+                parameter="operation" scope="request">
+            <forward name="form"
+                     path="/WEB-INF/jsp/modal/axispro018_buscador.jsp"/>
+        </action>
+        <action path="/modal_axispro022"
+                type="axis.mvc.control.modal.Axispro022Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro022.jsp"/>
+        </action>
+        <action path="/modal_axispro023"
+                type="axis.mvc.control.modal.Axispro023Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro023.jsp"/>
+        </action>
+        <action path="/modal_axispro039"
+                type="axis.mvc.control.modal.Axispro039Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro039.jsp"/>
+        </action>
+        <action path="/modal_axispro033"
+                type="axis.mvc.control.modal.Axispro033Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro033.jsp"/>
+        </action>
+        <action path="/modal_axispro040"
+                type="axis.mvc.control.modal.Axispro040Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro040.jsp"/>
+        </action>
+        <action path="/modal_axispro041"
+                type="axis.mvc.control.modal.Axispro041Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro041.jsp"/>
+        </action>
+        <action path="/modal_axispro042"
+                type="axis.mvc.control.modal.Axispro042Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro042.jsp"/>
+        </action>
+        <action path="/modal_axispro043"
+                type="axis.mvc.control.modal.Axispro043Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro043.jsp"/>
+        </action>
+        <action path="/modal_axispro044"
+                type="axis.mvc.control.modal.Axispro044Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro044.jsp"/>
+        </action>
+        <action path="/modal_axispro045"
+                type="axis.mvc.control.modal.Axispro045Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro045.jsp"/>
+        </action>
+        <action path="/modal_axispro046"
+                type="axis.mvc.control.modal.Axispro046Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro046.jsp"/>
+        </action>
+        <action path="/modal_axispro047"
+                type="axis.mvc.control.modal.Axispro047Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro047.jsp"/>
+        </action>
+        <action path="/modal_axismpr001"
+                type="axis.mvc.control.modal.Axismpr001Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismpr001.jsp"/>
+        </action>
+        <action path="/modal_axismpr006"
+                type="axis.mvc.control.modal.Axismpr006Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismpr006.jsp"/>
+        </action>
+        <action path="/modal_axismpreditor"
+                type="axis.mvc.control.modal.AxismpreditorAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismpreditor.jsp"/>
+        </action>
+        <action path="/modal_axisgfi001"
+                type="axis.mvc.control.modal.Axisgfi001Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisgfi001.jsp"/>
+        </action>
+        <action path="/modal_axisgfi003"
+                type="axis.mvc.control.modal.Axisgfi003Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisgfi003.jsp"/>
+        </action>
+        <action path="/modal_axisgfi011"
+                type="axis.mvc.control.modal.Axisgfi011Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisgfi011.jsp"/>
+        </action>
+        <action path="/modal_axisgfi012"
+                type="axis.mvc.control.modal.Axisgfi012Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisgfi012.jsp"/>
+        </action>
+        <action path="/modal_axisgfi023"
+                type="axis.mvc.control.modal.Axisgfi023Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisgfi023.jsp"/>
+        </action>
+        <action path="/modal_axisgfi024"
+                type="axis.mvc.control.modal.Axisgfi024Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisgfi024.jsp"/>
+        </action>
+        <action path="/modal_axisgfi031"
+                type="axis.mvc.control.modal.Axisgfi031Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisgfi031.jsp"/>
+        </action>
+        <action path="/modal_axispro001_garantias"
+                type="axis.mvc.control.modal.Axispro001_garantiasAction"
+                parameter="operation" scope="request">
+            <forward name="form"
+                     path="/WEB-INF/jsp/modal/axispro001_garantias.jsp"/>
+            <forward name="consultarParametrosGar"
+                     path="/axis_axismpr004.do?operation=init"/>
+        </action>
+        <!--*****************************************  GESTION DE FORMULAS ***************************************************************-->
+        <action path="/modal_axisgfi017"
+                type="axis.mvc.control.modal.Axisgfi017Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisgfi017.jsp"/>
+        </action>
+        <action path="/modal_axisgfi018"
+                type="axis.mvc.control.modal.Axisgfi018Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisgfi018.jsp"/>
+        </action>
+        <action path="/modal_axisgfi019"
+                type="axis.mvc.control.modal.Axisgfi019Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisgfi019.jsp"/>
+        </action>
+        <action path="/modal_axisgfi013"
+                type="axis.mvc.control.modal.Axisgfi013Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisgfi013.jsp"/>
+        </action>
+        <action path="/modal_axisgfi014"
+                type="axis.mvc.control.modal.Axisgfi014Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisgfi014.jsp"/>
+        </action>
+        <action path="/modal_axisgfi015"
+                type="axis.mvc.control.modal.Axisgfi015Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisgfi015.jsp"/>
+        </action>
+        <action path="/modal_axisgfi016"
+                type="axis.mvc.control.modal.Axisgfi016Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisgfi016.jsp"/>
+        </action>
+        <!--*****************************************  GESTION REEMBOLSOS ****************************************************************-->
+        <action path="/modal_axisrmb001"
+                type="axis.mvc.control.modal.Axisrmb001Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrmb001.jsp"/>
+        </action>
+        <action path="/modal_axisrmb003"
+                type="axis.mvc.control.modal.Axisrmb003Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrmb003.jsp"/>
+        </action>
+        <action path="/modal_axisrmb004"
+                type="axis.mvc.control.modal.Axisrmb004Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrmb004.jsp"/>
+        </action>
+        <action path="/modal_axisrmb005"
+                type="axis.mvc.control.modal.Axisrmb005Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrmb005.jsp"/>
+        </action>
+        <action path="/modal_axisrmb008"
+                type="axis.mvc.control.modal.Axisrmb008Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrmb008.jsp"/>
+        </action>
+        <!--****************************************  UTILIDADES GENÉRICAS ****************************************************************-->
+        <action path="/modal_axisfileupload"
+                type="axis.mvc.control.modal.AxisfileuploadAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfileupload.jsp"/>
+        </action>
+        <action path="/modal_axisediciontexto"
+                type="axis.mvc.control.modal.AxisediciontextoAction"
+                parameter="operation" scope="request">
+            <forward name="form"
+                     path="/WEB-INF/jsp/modal/axisediciontexto.jsp"/>
+        </action>
+        <action path="/modal_axisconfirm"
+                type="axis.mvc.control.modal.AxisConfirm" parameter="operation"
+                scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisconfirm.jsp"/>
+        </action>
+        <!--*****************************************  CIERRES ****************************************************************-->
+        <action path="/modal_axisadm013"
+                type="axis.mvc.control.modal.Axisadm013Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm013.jsp"/>
+        </action>
+        <!--***************************************  RED COMERCIAL ****************************************************-->
+        <action path="/modal_axisage001"
+                type="axis.mvc.control.modal.Axisage001Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage001.jsp"/>
+        </action>
+        <action path="/modal_axisage004"
+                type="axis.mvc.control.modal.Axisage004Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage004.jsp"/>
+        </action>
+        <action path="/modal_axisage005"
+                type="axis.mvc.control.modal.Axisage005Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage005.jsp"/>
+        </action>
+        <action path="/modal_axisage009"
+                type="axis.mvc.control.modal.Axisage009Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage009.jsp"/>
+        </action>
+        <action path="/modal_axisage011"
+                type="axis.mvc.control.modal.Axisage011Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage011.jsp"/>
+        </action>
+        <action path="/modal_axisage018"
+                type="axis.mvc.control.modal.Axisage018Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage018.jsp"/>
+        </action>
+        <action path="/modal_axisage019"
+                type="axis.mvc.control.modal.Axisage019Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage019.jsp"/>
+        </action>
+        <action path="/modal_axisage006"
+                type="axis.mvc.control.modal.Axisage006Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage006.jsp"/>
+        </action>
+        <action path="/modal_axisage014"
+                type="axis.mvc.control.modal.Axisage014Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage014.jsp"/>
+        </action>
+        <action path="/modal_axisage015"
+                type="axis.mvc.control.modal.Axisage015Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage015.jsp"/>
+        </action>
+        <action path="/modal_axisage016"
+                type="axis.mvc.control.modal.Axisage016Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage016.jsp"/>
+        </action>
+        <action path="/modal_axisage017"
+                type="axis.mvc.control.modal.Axisage017Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage017.jsp"/>
+        </action>
+        <action path="/modal_axisage020"
+                type="axis.mvc.control.modal.Axisage020Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage020.jsp"/>
+        </action>
+        <action path="/modal_axisage021"
+                type="axis.mvc.control.modal.Axisage021Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage021.jsp"/>
+        </action>
+        <action path="/modal_axisage022"
+                type="axis.mvc.control.modal.Axisage022Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage022.jsp"/>
+        </action>
+        <action path="/modal_axisage023"
+                type="axis.mvc.control.modal.Axisage023Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage023.jsp"/>
+        </action>
+        <action path="/modal_axisage024"
+                type="axis.mvc.control.modal.Axisage024Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage024.jsp"/>
+        </action>
+        <action path="/modal_axisage025"
+                type="axis.mvc.control.modal.Axisage025Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage025.jsp"/>
+        </action>
+        <action path="/modal_axisage026"
+                type="axis.mvc.control.modal.Axisage026Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage026.jsp"/>
+        </action>
+        <action path="/modal_axisage027"
+                type="axis.mvc.control.modal.Axisage027Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage027.jsp"/>
+        </action>
+        <action path="/modal_axisage028"
+                type="axis.mvc.control.modal.Axisage028Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage028.jsp"/>
+        </action>
+		<action path="/modal_axisage033"
+                type="axis.mvc.control.modal.Axisage033Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage033.jsp"/>
+        </action>
+        <!--***********************************  GESTIÓN PROPUESTAS RETENIDAS *****************************************-->
+        <action path="/modal_axisctr033"
+                type="axis.mvc.control.modal.Axisctr033Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr033.jsp"/>
+        </action>
+        <action path="/modal_axisctr035"
+                type="axis.mvc.control.modal.Axisctr035Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr035.jsp"/>
+        </action>
+        <action path="/modal_axisctr036"
+                type="axis.mvc.control.modal.Axisctr036Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr036.jsp"/>
+        </action>
+        <action path="/modal_axisctr037"
+                type="axis.mvc.control.modal.Axisctr037Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr037.jsp"/>
+        </action>
+        <!--**************************************** Flujo Usuarios CIV ***********************************************-->
+        <action path="/modal_axisusu003"
+                type="axis.mvc.control.modal.Axisusu003Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisusu003.jsp"/>
+        </action>
+        <action path="/modal_axisusu006"
+                type="axis.mvc.control.modal.Axisusu006Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisusu006.jsp"/>
+        </action>
+        <action path="/modal_axisusu004"
+                type="axis.mvc.control.modal.Axisusu004Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisusu004.jsp"/>
+        </action>
+		<!-- INI - EDBR - 13/JUNIO/2019 - IAXIS4330 - inclusion de pantallas axisrea058 y axisre059 -->
+        <!--***********************************  PATRIMONIO TÉCNICO *****************************************-->
+        <action path="/modal_axisrea058"
+                type="axis.mvc.control.modal.Axisrea058Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea058.jsp"/>
+            <forward name="nou" path="/WEB-INF/jsp/modal/axisrea058.jsp"/>
+            <forward name="aceptar" path="/WEB-INF/jsp/modal/axisrea058.jsp"/>
+        </action>
+        <action path="/modal_axisrea059"
+                type="axis.mvc.control.modal.Axisrea059Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea059.jsp"/>
+        </action>
+        <!-- INI - EDBR - 13/JUNIO/2019 - IAXIS4330 - inclusion de pantallas axisrea058 y axisre059 -->		
+        <!--***********************************  CONTRATO REASEGURO *****************************************-->
+        <action path="/modal_axisrea001"
+                type="axis.mvc.control.modal.Axisrea001Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea001.jsp"/>
+        </action>
+        <action path="/modal_axisrea004"
+                type="axis.mvc.control.modal.Axisrea004Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea004.jsp"/>
+        </action>
+        <action path="/modal_axisrea004prop"
+                type="axis.mvc.control.modal.Axisrea004PropAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea004prop.jsp"/>
+        </action>
+        <action path="/modal_axisrea005"
+                type="axis.mvc.control.modal.Axisrea005Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea005.jsp"/>
+        </action>
+        <action path="/modal_axisrea010"
+                type="axis.mvc.control.modal.Axisrea010Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea010.jsp"/>
+        </action>
+        <action path="/modal_axisrea012"
+                type="axis.mvc.control.modal.Axisrea012Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea012.jsp"/>
+        </action>
+        <action path="/modal_axisrea021"
+                type="axis.mvc.control.modal.Axisrea021Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea021.jsp"/>
+        </action>
+        <action path="/modal_axisrea024"
+                type="axis.mvc.control.modal.Axisrea024Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea024.jsp"/>
+        </action>
+        <action path="/modal_axisrea026"
+                type="axis.mvc.control.modal.Axisrea026Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea026.jsp"/>
+        </action>
+        <action path="/modal_axisrea028"
+                type="axis.mvc.control.modal.Axisrea028Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea028.jsp"/>
+        </action>
+        <action path="/modal_axisrea030"
+                type="axis.mvc.control.modal.Axisrea030Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea030.jsp"/>
+        </action>
+        <action path="/modal_axisrea032"
+                type="axis.mvc.control.modal.Axisrea032Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea032.jsp"/>
+        </action>
+        <action path="/modal_axisrea033"
+                type="axis.mvc.control.modal.Axisrea033Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea033.jsp"/>
+        </action>
+        <action path="/modal_axisrea034"
+                type="axis.mvc.control.modal.Axisrea034Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea034.jsp"/>
+        </action>
+        <action path="/modal_axisrea036"
+                type="axis.mvc.control.modal.Axisrea036Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea036.jsp"/>
+        </action>
+        <action path="/modal_axisrea038"
+                type="axis.mvc.control.modal.Axisrea038Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea038.jsp"/>
+        </action>
+        <action path="/modal_axisrea039"
+                type="axis.mvc.control.modal.Axisrea039Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea039.jsp"/>
+        </action>
+        <!--************************************* Mantenimiento y liquidación Cuentas de Coaseguro **********************************************-->
+        <action path="/modal_axiscoa003"
+                type="axis.mvc.control.modal.Axiscoa003Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscoa003.jsp"/>
+        </action>
+        <action path="/modal_axiscoa004"
+                type="axis.mvc.control.modal.Axiscoa004Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscoa004.jsp"/>
+        </action>
+        <action path="/modal_axiscoa005"
+                type="axis.mvc.control.modal.Axiscoa005Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscoa005.jsp"/>
+        </action>
+        <!--******************************** GESTIÓN PROVISIONES ************************************************-->
+        <action path="/modal_axispro030"
+                type="axis.mvc.control.modal.Axispro030Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro030.jsp"/>
+        </action>
+        <!--******************************** MANT. IMPUESTOS ************************************************-->
+        <action path="/modal_axisimp002"
+                type="axis.mvc.control.modal.Axisimp002Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisimp002.jsp"/>
+        </action>
+        <action path="/modal_axisimp003"
+                type="axis.mvc.control.modal.Axisimp003Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisimp003.jsp"/>
+        </action>
+        <action path="/modal_axisimp005"
+                type="axis.mvc.control.modal.Axisimp005Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisimp005.jsp"/>
+        </action>
+        <action path="/modal_axisimp007"
+                type="axis.mvc.control.modal.Axisimp007Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisimp007.jsp"/>
+        </action>
+        <action path="/modal_axisimp008"
+                type="axis.mvc.control.modal.Axisimp008Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisimp008.jsp"/>
+        </action>
+        <action path="/modal_axisimp009"
+                type="axis.mvc.control.modal.Axisimp009Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisimp009.jsp"/>
+        </action>
+        <!--******************************** DATOS IDENTIFICATIVOS DE LA PERSONA *****************************************-->
+        <action path="/modal_axisper017"
+                type="axis.mvc.control.modal.Axisper017Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper017.jsp"/>
+        </action>
+        <!--******************************** PERSONA DUPLICADAS *****************************************-->
+        <action path="/modal_axisper024"
+                type="axis.mvc.control.modal.Axisper024Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper024.jsp"/>
+        </action>
+        <!--****************************************  GESTIÓ DE REBUTS ****************************************************************-->
+        <action path="/modal_axisadm021"
+                type="axis.mvc.control.modal.Axisadm021Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm021.jsp"/>
+        </action>
+        <action path="/modal_axisadm028"
+                type="axis.mvc.control.modal.Axisadm028Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm028.jsp"/>
+        </action>
+        <!--****************************************  MODAL SINIES PROV. **********************************************************-->
+        <action path="/modal_axissin002MOD"
+                type="axis.mvc.control.modal.Axissin002MODAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin002MOD.jsp"/>
+        </action>
+        <action path="/modal_axissin004MOD"
+                type="axis.mvc.control.modal.Axissin004MODAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin004MOD.jsp"/>
+        </action>
+        <!--****************************************  PROCÉS FITXER CODA **********************************************************-->
+        <action path="/modal_axisadm023"
+                type="axis.mvc.control.modal.Axisadm023Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm023.jsp"/>
+        </action>
+        <action path="/modal_axisadm025"
+                type="axis.mvc.control.modal.Axisadm025Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm025.jsp"/>
+        </action>
+        <action path="/modal_axisadm026"
+                type="axis.mvc.control.modal.Axisadm026Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm026.jsp"/>
+        </action>
+        <action path="/modal_axisadm030"
+                type="axis.mvc.control.modal.Axisadm030Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm030.jsp"/>
+        </action>
+        <!--****************************************** SINIESTROS NEW ********************************************-->
+        <action path="/modal_axissin007"
+                type="axis.mvc.control.modal.Axissin007Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin007.jsp"/>
+        </action>
+        <action path="/modal_axissin008"
+                type="axis.mvc.control.modal.Axissin008Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin008.jsp"/>
+        </action>
+        <action path="/modal_axissin009"
+                type="axis.mvc.control.modal.Axissin009Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin009.jsp"/>
+        </action>
+        <action path="/modal_axissin010"
+                type="axis.mvc.control.modal.Axissin010Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin010.jsp"/>
+        </action>
+        <action path="/modal_axissin011"
+                type="axis.mvc.control.modal.Axissin011Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin011.jsp"/>
+        </action>
+        <action path="/modal_axissin012"
+                type="axis.mvc.control.modal.Axissin012Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin012.jsp"/>
+        </action>
+        <action path="/modal_axissin013"
+                type="axis.mvc.control.modal.Axissin013Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin013.jsp"/>
+        </action>
+        <action path="/modal_axissin014"
+                type="axis.mvc.control.modal.Axissin014Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin014.jsp"/>
+        </action>
+        <action path="/modal_axissin015"
+                type="axis.mvc.control.modal.Axissin015Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin015.jsp"/>
+        </action>
+        <action path="/modal_axissin016"
+                type="axis.mvc.control.modal.Axissin016Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin016.jsp"/>
+        </action>
+        <action path="/modal_axissin017"
+                type="axis.mvc.control.modal.Axissin017Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin017.jsp"/>
+        </action>
+        <action path="/modal_axissin018"
+                type="axis.mvc.control.modal.Axissin018Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin018.jsp"/>
+        </action>
+        <action path="/modal_axissin019"
+                type="axis.mvc.control.modal.Axissin019Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin019.jsp"/>
+            <forward name="lstSiniestros"
+                     path="/WEB-INF/jsp/modal/axissin019_b.jsp"/>
+        </action>
+        <action path="/modal_axissin027"
+                type="axis.mvc.control.modal.Axissin027Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin027.jsp"/>
+        </action>
+		<action path="/modal_axissin062"
+                type="axis.mvc.control.modal.Axissin062Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin062.jsp"/>
+        </action>
+        <action path="/modal_axissin026"
+                type="axis.mvc.control.modal.Axissin026Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin026.jsp"/>
+        </action>
+        <!--****************************************  AUTOS ****************************************************************-->
+        <action path="/modal_axisctr058"
+                type="axis.mvc.control.modal.Axisctr058Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr058.jsp"/>
+        </action>
+        <action path="/modal_axisctr062"
+                type="axis.mvc.control.modal.Axisctr062Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr062.jsp"/>
+        </action>
+        <action path="/modal_axisctr065"
+                type="axis.mvc.control.modal.Axisctr065Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr065.jsp"/>
+        </action>
+        <action path="/modal_axisctr059"
+                type="axis.mvc.control.modal.Axisctr059Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr059.jsp"/>
+            <forward name="axisctr059_aux"
+                     path="/WEB-INF/jsp/modal/axisctr059_aux.jsp"/>
+        </action>
+        <action path="/modal_axisctr206"
+                type="axis.mvc.control.modal.Axisctr206Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr206.jsp"/>
+        </action>
+        <action path="/modal_axisctr208"
+                type="axis.mvc.control.modal.Axisctr208Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr208.jsp"/>
+        </action>
+        <!--****************************************  MANTENIMIENTO DE OPERACIONES CON FONDOS ****************************************************************-->
+        <action path="/modal_axisfinv001"
+                type="axis.mvc.control.modal.Axisfinv001Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfinv001.jsp"/>
+        </action>
+        <action path="/modal_axisfinv005"
+                type="axis.mvc.control.modal.Axisfinv005Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfinv005.jsp"/>
+        </action>
+        <!--*********************************  Suplementos ******************************************-->
+        <action path="/modal_axisctr077"
+                type="axis.mvc.control.modal.Axisctr077Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr077.jsp"/>
+        </action>
+        <!--*********************************  Jobs ******************************************-->
+        <action path="/modal_axisjob002"
+                type="axis.mvc.control.modal.Axisjob002Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisjob002.jsp"/>
+        </action>
+        <!--************************************** BLOQUEO / PIGNORACION ****************************************************************-->
+        <action path="/modal_axisctr069"
+                type="axis.mvc.control.modal.Axisctr069Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr069.jsp"/>
+        </action>
+        <!--************************************** BLOQUEO / PIGNORACION ****************************************************************-->
+        <action path="/modal_axisctr221"
+                type="axis.mvc.control.modal.Axisctr221Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr221.jsp"/>
+        </action>
+        <!--************************************** REHABILITACIONES ****************************************************************-->
+        <action path="/modal_axisctr071"
+                type="axis.mvc.control.modal.Axisctr071Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr071.jsp"/>
+        </action>
+        <!--************************************** DEVOLUCIONES ****************************************************************-->
+        <action path="/modal_axisadm037"
+                type="axis.mvc.control.modal.Axisadm037Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm037.jsp"/>
+        </action>
+        <action path="/modal_axisadm034"
+                type="axis.mvc.control.modal.Axisadm034Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm034.jsp"/>
+        </action>
+        <!--************************************** Gestió Sinistres ****************************************************************-->
+        <action path="/modal_axissin020"
+                type="axis.mvc.control.modal.Axissin020Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin020.jsp"/>
+        </action>
+        <action path="/modal_axissin022"
+                type="axis.mvc.control.modal.Axissin022Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin022.jsp"/>
+        </action>
+        <action path="/modal_axissin023"
+                type="axis.mvc.control.modal.Axissin023Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin023.jsp"/>
+        </action>
+        <action path="/modal_axissin024"
+                type="axis.mvc.control.modal.Axissin024Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin024.jsp"/>
+            <forward name="consultarFormula"
+                     path="/axis_axisgfi002.do?operation=form"/>
+        </action>
+        <action path="/modal_axissin025"
+                type="axis.mvc.control.modal.Axissin025Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin025.jsp"/>
+        </action>
+		<action path="/modal_axissin063"
+                type="axis.mvc.control.modal.Axissin063Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin063.jsp"/>
+        </action>
+        <action path="/modal_axissin076"
+                type="axis.mvc.control.modal.Axissin076Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin076.jsp"/>
+        </action>
+		<action path="/modal_axissin071"
+                type="axis.mvc.control.modal.Axissin071Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin071.jsp"/>
+        </action>
+        <!--****************************************  AGENDA ****************************************************************-->
+        <action path="/modal_axisctr063"
+                type="axis.mvc.control.modal.Axisctr063Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr063.jsp"/>
+        </action>
+		<!--****************************************  AGENDA AM ****************************************************************-->
+		<action path="/modal_axisctr063_1"
+			type="axis.mvc.control.modal.Axisctr063_1Action" parameter="operation"
+			scope="request">
+			<forward name="form" path="/WEB-INF/jsp/modal/axisctr063_1.jsp" />
+		</action>
+
+        <!--************************************** BONUS/MALUS FRANQUICIAS ******************************************************-->
+        <action path="/modal_axisctr074"
+                type="axis.mvc.control.modal.Axisctr074Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr074.jsp"/>
+        </action>
+        <!--************************************** BONUS/MALUS FRANQUICIAS ******************************************************-->
+        <action path="/modal_axisadm038"
+                type="axis.mvc.control.modal.Axisadm038Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm038.jsp"/>
+        </action>
+        <!--************************************** Detall cuentas tecnicas*******************************************-->
+        <action path="/modal_axisctr081"
+                type="axis.mvc.control.modal.Axisctr081Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr081.jsp"/>
+        </action>
+        <!--**************************************Liquidación de comisiones*******************-->
+        <action path="/modal_axisctr078"
+                type="axis.mvc.control.modal.Axisctr078Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr078.jsp"/>
+        </action>
+        <!--**************************************Gestión de comisiones*******************-->
+        <action path="/modal_axiscomi002"
+                type="axis.mvc.control.modal.Axiscomi002Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscomi002.jsp"/>
+        </action>
+        <action path="/modal_axiscomi003"
+                type="axis.mvc.control.modal.Axiscomi003Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscomi003.jsp"/>
+        </action>
+        <action path="/modal_axiscomi004"
+                type="axis.mvc.control.modal.Axiscomi004Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscomi004.jsp"/>
+        </action>
+        <action path="/modal_axiscomi005"
+                type="axis.mvc.control.modal.Axiscomi005Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscomi005.jsp"/>
+        </action>
+        <action path="/modal_axiscomi006"
+                type="axis.mvc.control.modal.Axiscomi006Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscomi006.jsp"/>
+        </action>
+        <action path="/modal_axiscomi007"
+                type="axis.mvc.control.modal.Axiscomi007Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscomi007.jsp"/>
+        </action>
+        <action path="/modal_axiscomi008"
+                type="axis.mvc.control.modal.Axiscomi008Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscomi008.jsp"/>
+        </action>
+        <action path="/modal_axiscomi009"
+                type="axis.mvc.control.modal.Axiscomi009Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscomi009.jsp"/>
+        </action>
+        <action path="/modal_axiscomi010"
+                type="axis.mvc.control.modal.Axiscomi010Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscomi010.jsp"/>
+        </action>
+        <action path="/modal_axiscomi012"
+                type="axis.mvc.control.modal.Axiscomi012Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscomi012.jsp"/>
+        </action>
+        <action path="/modal_axiscomi014"
+                type="axis.mvc.control.modal.Axiscomi014Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscomi014.jsp"/>
+        </action>
+        <action path="/modal_axiscomi015"
+                type="axis.mvc.control.modal.Axiscomi015Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscomi015.jsp"/>
+        </action>
+        <action path="/modal_axiscomi016"
+                type="axis.mvc.control.modal.Axiscomi016Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscomi016.jsp"/>
+        </action>
+        <action path="/modal_axiscomi017"
+                type="axis.mvc.control.modal.Axiscomi017Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscomi017.jsp"/>
+        </action>
+		<!--**************************************NEW PATCH 33977/204336 IG **************************************-->
+        <action path="/modal_axiscomi020"
+                type="axis.mvc.control.modal.Axiscomi020Action" parameter="operation"
+                scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscomi020.jsp"/>
+       </action>
+        <!--**************************************Cuadro de descuentos*******************-->
+        <action path="/modal_axisdesc002"
+                type="axis.mvc.control.modal.Axisdesc002Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisdesc002.jsp"/>
+        </action>
+        <action path="/modal_axisdesc003"
+                type="axis.mvc.control.modal.Axisdesc003Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisdesc003.jsp"/>
+        </action>
+        <action path="/modal_axisdesc004"
+                type="axis.mvc.control.modal.Axisdesc004Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisdesc004.jsp"/>
+        </action>
+        <action path="/modal_axisdesc005"
+                type="axis.mvc.control.modal.Axisdesc005Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisdesc005.jsp"/>
+        </action>
+        <action path="/modal_axisdesc006"
+                type="axis.mvc.control.modal.Axisdesc006Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisdesc006.jsp"/>
+        </action>
+        <action path="/modal_axisdesc007"
+                type="axis.mvc.control.modal.Axisdesc007Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisdesc007.jsp"/>
+        </action>
+        <action path="/modal_axisdesc008"
+                type="axis.mvc.control.modal.Axisdesc008Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisdesc008.jsp"/>
+        </action>
+        <action path="/modal_axisdesc009"
+                type="axis.mvc.control.modal.Axisdesc009Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisdesc009.jsp"/>
+        </action>
+        <action path="/modal_axisdesc010"
+                type="axis.mvc.control.modal.Axisdesc010Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisdesc010.jsp"/>
+        </action>
+        <action path="/modal_axisdesc012"
+                type="axis.mvc.control.modal.Axisdesc012Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisdesc012.jsp"/>
+        </action>
+        <action path="/modal_axisdesc013"
+                type="axis.mvc.control.modal.Axisdesc013Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisdesc013.jsp"/>
+        </action>
+        <action path="/modal_axisdesc015"
+                type="axis.mvc.control.modal.Axisdesc015Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisdesc015.jsp"/>
+        </action>
+        <action path="/modal_axisdesc016"
+                type="axis.mvc.control.modal.Axisdesc016Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisdesc016.jsp"/>
+        </action>
+        <action path="/modal_axisdesc017"
+                type="axis.mvc.control.modal.Axisdesc017Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisdesc017.jsp"/>
+        </action>
+        <!--**************************************Gestión de propuestas retenidas*******************-->
+        <action path="/modal_axisctr099"
+                type="axis.mvc.control.modal.Axisctr099Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr099.jsp"/>
+        </action>
+        <!--**************************************Consulta de procesos*******************-->
+        <action path="/modal_axisadm048"
+                type="axis.mvc.control.modal.Axisadm048Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm048.jsp"/>
+        </action>
+        <!--**************************************Consulta de procesos de gestor ficheros*******************-->
+        <action path="/modal_axislist008"
+                type="axis.mvc.control.modal.Axislist008Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axislist008.jsp"/>
+        </action>
+        <!--**************************************Traspasos*******************-->
+        <action path="/modal_axisctr092"
+                type="axis.mvc.control.modal.Axisctr092Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr092.jsp"/>
+        </action>
+        <!--************************************** Cerca Aseguradoras *******************-->
+        <action path="/modal_axisctr106"
+                type="axis.mvc.control.modal.Axisctr106Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr106.jsp"/>
+        </action>
+        <action path="/modal_axisctr154"
+                type="axis.mvc.control.modal.Axisctr154Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr154.jsp"/>
+        </action>
+        <!--**************************************Alta Préstams manuals*******************-->
+        <action path="/modal_axisctr103"
+                type="axis.mvc.control.modal.Axisctr103Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr103.jsp"/>
+        </action>
+        <!--******************************** GESTIÓN PENSIONES ************************************************-->
+        <action path="/modal_axispen006"
+                type="axis.mvc.control.modal.Axispen006Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispen006.jsp"/>
+        </action>
+        <action path="/modal_axispen007"
+                type="axis.mvc.control.modal.Axispen007Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispen007.jsp"/>
+        </action>
+        <action path="/modal_axispen008"
+                type="axis.mvc.control.modal.Axispen008Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispen008.jsp"/>
+        </action>
+        <action path="/modal_axispen009"
+                type="axis.mvc.control.modal.Axispen009Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispen009.jsp"/>
+        </action>
+        <action path="/modal_axispen010"
+                type="axis.mvc.control.modal.Axispen010Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispen010.jsp"/>
+        </action>
+        <action path="/modal_axispen011"
+                type="axis.mvc.control.modal.Axispen011Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispen011.jsp"/>
+        </action>
+        <action path="/modal_axispen012"
+                type="axis.mvc.control.modal.Axispen012Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispen012.jsp"/>
+        </action>
+        <action path="/modal_axispen013"
+                type="axis.mvc.control.modal.Axispen013Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispen013.jsp"/>
+        </action>
+        <action path="/modal_axispen014"
+                type="axis.mvc.control.modal.Axispen014Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispen014.jsp"/>
+        </action>
+        <action path="/modal_axispen015"
+                type="axis.mvc.control.modal.Axispen015Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispen015.jsp"/>
+        </action>
+        <action path="/modal_axisctr157"
+                type="axis.mvc.control.modal.Axisctr157Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr157.jsp"/>
+        </action>
+        <!--**************************************Consulta de comisiones*******************-->
+        <action path="/modal_axisctr066"
+                type="axis.mvc.control.modal.Axisctr066Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr066.jsp"/>
+        </action>
+        <!--**************************************Políticas de subscripción*******************-->
+        <action path="/modal_axispsu003"
+                type="axis.mvc.control.modal.Axispsu003Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispsu003.jsp"/>
+        </action>      
+        <action path="/modal_axispsu015"
+                type="axis.mvc.control.modal.Axispsu015Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispsu015.jsp"/>
+        </action>
+        <action path="/modal_axispsu016"
+                type="axis.mvc.control.modal.Axispsu016Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispsu016.jsp"/>
+        </action>
+         <action path="/modal_axispsu017"
+                type="axis.mvc.control.modal.Axispsu017Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispsu017.jsp"/>
+        </action>
+        <action path="/modal_axispsu018"
+                type="axis.mvc.control.modal.Axispsu018Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispsu018.jsp"/>
+        </action>
+       
+        <!--**************************************Contabilidad*******************-->
+        <action path="/modal_axisadm051"
+                type="axis.mvc.control.modal.Axisadm051Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm051.jsp"/>
+        </action>
+        <action path="/modal_axismnt013"
+                type="axis.mvc.control.modal.Axismnt013Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismnt013.jsp"/>
+        </action>
+        <!--**************************************Control de carga*******************-->
+        <action path="/modal_axisint002"
+                type="axis.mvc.control.modal.Axisint002Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisint002.jsp"/>
+        </action>
+        <action path="/modal_axisint003"
+                type="axis.mvc.control.modal.Axisint003Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisint003.jsp"/>
+        </action>
+        <action path="/modal_axispsu013"
+                type="axis.mvc.control.modal.Axispsu013Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispsu013.jsp"/>
+        </action>
+        <action path="/modal_axispsu014"
+                type="axis.mvc.control.modal.Axispsu014Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispsu014.jsp"/>
+        </action>
+        <!--**********************************ALM********************-->
+        <action path="/modal_axisadm057"
+                type="axis.mvc.control.modal.Axisadm057Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm057.jsp"/>
+        </action>
+        <action path="/modal_axisadm055"
+                type="axis.mvc.control.modal.Axisadm055Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm055.jsp"/>
+        </action>
+        <!--*************************** Mantenimineto Cobrador Bancario **************************-->
+        <action path="/modal_axisadm061"
+                type="axis.mvc.control.modal.Axisadm061Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm061.jsp"/>
+        </action>
+        <action path="/modal_axisadm059"
+                type="axis.mvc.control.modal.Axisadm059Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm059.jsp"/>
+        </action>
+        <action path="/modal_axisadm060"
+                type="axis.mvc.control.modal.Axisadm060Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm060.jsp"/>
+        </action>
+        <action path="/modal_axisadm062"
+                type="axis.mvc.control.modal.Axisadm062Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm062.jsp"/>
+        </action>
+        <!--***************************      Mapa          **************************-->
+        <action path="/modal_axismap002"
+                type="axis.mvc.control.modal.Axismap002Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismap002.jsp"/>
+        </action>
+        <action path="/modal_axismap003"
+                type="axis.mvc.control.modal.Axismap003Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismap003.jsp"/>
+        </action>
+        <action path="/modal_axismap004"
+                type="axis.mvc.control.modal.Axismap004Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismap004.jsp"/>
+        </action>
+        <action path="/modal_axismap005"
+                type="axis.mvc.control.modal.Axismap005Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismap005.jsp"/>
+        </action>
+        <action path="/modal_axismap006"
+                type="axis.mvc.control.modal.Axismap006Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismap006.jsp"/>
+        </action>
+        <action path="/modal_axismap007"
+                type="axis.mvc.control.modal.Axismap007Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismap007.jsp"/>
+        </action>
+        <action path="/modal_axismap008"
+                type="axis.mvc.control.modal.Axismap008Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismap008.jsp"/>
+        </action>
+        <action path="/modal_axismap009"
+                type="axis.mvc.control.modal.Axismap009Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismap009.jsp"/>
+        </action>
+        <action path="/modal_axismap010"
+                type="axis.mvc.control.modal.Axismap010Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismap010.jsp"/>
+        </action>
+        <action path="/modal_axismap011"
+                type="axis.mvc.control.modal.Axismap011Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismap011.jsp"/>
+        </action>
+        <action path="/modal_axismap012"
+                type="axis.mvc.control.modal.Axismap012Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismap012.jsp"/>
+        </action>
+        <action path="/modal_axismap013"
+                type="axis.mvc.control.modal.Axismap013Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismap013.jsp"/>
+        </action>
+        <action path="/modal_axismap014"
+                type="axis.mvc.control.modal.Axismap014Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismap014.jsp"/>
+        </action>
+        <!--*************************** Gestión FE DE VIDA **************************-->
+        <action path="/modal_axisctr160"
+                type="axis.mvc.control.modal.Axisctr160Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr160.jsp"/>
+        </action>
+        <action path="/modal_axisctr110"
+                type="axis.mvc.control.modal.Axisctr110Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr110.jsp"/>
+        </action>
+        <!--*************************** Desglòs de garanties **************************-->
+        <action path="/modal_axisctr163"
+                type="axis.mvc.control.modal.Axisctr163Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr163.jsp"/>
+        </action>
+        <!--**************************************Exporter*******************-->
+        <action path="/modal_axisexporter"
+                type="axis.mvc.control.modal.AxisexporterAction"
+                parameter="operation" scope="request">
+            <forward name="axisctr162export"
+                     path="/WEB-INF/jsp/modal/axisctr162export.jsp"/>
+            <forward name="axisctr500export"
+                     path="/WEB-INF/jsp/modal/axisctr500export.jsp"/>
+            <forward name="axisctr501export"
+                     path="/WEB-INF/jsp/modal/axisctr501export.jsp"/>
+            <forward name="axisctr502export"
+                     path="/WEB-INF/jsp/modal/axisctr502export.jsp"/>
+        </action>
+        <!--*************************** Agenda **************************-->
+        <action path="/modal_axisagd002"
+                type="axis.mvc.control.modal.Axisagd002Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisagd002.jsp"/>
+        </action>
+        <action path="/modal_axisagd004"
+                type="axis.mvc.control.modal.Axisagd004Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisagd004.jsp"/>
+        </action>
+        <action path="/modal_axisagd006"
+                type="axis.mvc.control.modal.Axisagd006Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisagd006.jsp"/>
+        </action>
+        <action path="/modal_axisagd007"
+                type="axis.mvc.control.modal.Axisagd007Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisagd007.jsp"/>
+        </action>
+        <!--**************************************Facultatius*******************-->
+        <action path="/modal_axisren001"
+                type="axis.mvc.control.modal.Axisren001Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisren001.jsp"/>
+        </action>
+        <!-- *************************************Buscador Garant-Campayas ******************************************-->
+        <!--**************************************Facultatius*******************-->
+        <action path="/modal_axisctr999"
+                type="axis.mvc.control.modal.Axisctr999Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr999.jsp"/>
+        </action>
+        <!--**************************************Búsqueda de garantías *******************-->
+        <action path="/modal_axisctr180"
+                type="axis.mvc.control.modal.Axisctr180Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr180.jsp"/>
+        </action>
+        <!--************************************* Gestión COTIZACIONES **********************************************-->
+        <action path="/modal_axisfinv007"
+                type="axis.mvc.control.modal.Axisfinv007Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfinv007.jsp"/>
+        </action>
+        <action path="/modal_axisfinv008"
+                type="axis.mvc.control.modal.Axisfinv008Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfinv008.jsp"/>
+            <forward name="nou" path="/WEB-INF/jsp/modal/axisfinv008.jsp"/>
+            <forward name="aceptar" path="/WEB-INF/jsp/modal/axisfinv008.jsp"/>
+        </action>
+        <action path="/modal_axisfinv009"
+                type="axis.mvc.control.modal.Axisfinv009Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfinv009.jsp"/>
+        </action>
+        <!--************************************* Gestión Gastos sobre fondos **********************************************-->
+        <action path="/modal_axisfinv011"
+                type="axis.mvc.control.modal.Axisfinv011Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfinv011.jsp"/>
+            <forward name="nou" path="/WEB-INF/jsp/modal/axisfinv011.jsp"/>
+            <forward name="refresh" path="/WEB-INF/jsp/modal/axisfinv011.jsp"/>
+            <forward name="aceptar" path="/WEB-INF/jsp/modal/axisfinv011.jsp"/>
+        </action>
+        <action path="/modal_axisfinv012"
+                type="axis.mvc.control.modal.Axisfinv012Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfinv012.jsp"/>
+        </action>
+        <action path="/modal_axisadm021rehab"
+                type="axis.mvc.control.modal.Axisadm021RehabAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm021Rehab.jsp"/>
+        </action>
+        <action path="/modal_axisfinv013"
+                type="axis.mvc.control.modal.Axisfinv013Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfinv013.jsp"/>
+        </action>
+        <action path="/modal_axisfinv015"
+                type="axis.mvc.control.modal.Axisfinv015Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfinv015.jsp"/>
+        </action>
+        <!--*************************** Alta/Edit Altura Comisiones **************************-->
+        <action path="/modal_axiscomi011"
+                type="axis.mvc.control.modal.Axiscomi011Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscomi011.jsp"/>
+        </action>
+        <!--************************************* Beneficiarios especiales **********************************************-->
+        <action path="/modal_axisctr177"
+                type="axis.mvc.control.modal.Axisctr177Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr177.jsp"/>
+        </action>
+        <action path="/modal_axisctr178"
+                type="axis.mvc.control.modal.Axisctr178Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr178.jsp"/>
+        </action>
+        <action path="/modal_axisctr179"
+                type="axis.mvc.control.modal.Axisctr179Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr179.jsp"/>
+        </action>
+        <!--************************************* Consulta de prestamos **********************************************-->
+        <action path="/modal_axisctr184"
+                type="axis.mvc.control.modal.Axisctr184Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr184.jsp"/>
+        </action>
+        <action path="/modal_axisper031"
+                type="axis.mvc.control.modal.Axisper031Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper031.jsp"/>
+        </action>
+        <!--************************************* BONSAI CALI **********************************************-->
+        <action path="/modal_axisctr185"
+                type="axis.mvc.control.modal.Axisctr185Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr185.jsp"/>
+        </action>
+        <!--************************************* MODULO DIRECCIONES MDP **********************************************-->
+        <action path="/modal_axisdir001"
+                type="axis.mvc.control.modal.Axisdir001Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisdir001.jsp"/>
+        </action>
+        <action path="/modal_axisdir002"
+                type="axis.mvc.control.modal.Axisdir002Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisdir002.jsp"/>
+        </action>
+        <action path="/modal_axisdir003"
+                type="axis.mvc.control.modal.Axisdir003Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisdir003.jsp"/>
+        </action>
+        <action path="/modal_axisadm069"
+                type="axis.mvc.control.modal.Axisadm069Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm069.jsp"/>
+        </action>
+        <action path="/modal_axisfis002"
+                type="axis.mvc.control.modal.Axisfis002Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfis002.jsp"/>
+        </action>
+        <action path="/modal_axisfis004"
+                type="axis.mvc.control.modal.Axisfis004Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfis004.jsp"/>
+        </action>
+        <action path="/modal_axisadm073"
+                type="axis.mvc.control.modal.Axisadm073Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm073.jsp"/>
+        </action>
+        <!--Inicio IAXIS-3651 09/07/2019-->
+        <!--************************************* Gestión Pagos Outsourcing **********************************************-->
+        <action path="/modal_axisadm105"
+                type="axis.mvc.control.modal.Axisadm105Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm105.jsp"/>
+            <forward name="nou" path="/WEB-INF/jsp/modal/axisadm105.jsp"/>
+            <forward name="aceptar" path="/WEB-INF/jsp/modal/axisadm105.jsp"/>
+        </action>
+        <!--Fin IAXIS-3651 09/07/2019-->
+        <!--************************************* Gestión COMPAÑIAS **********************************************-->
+        <action path="/modal_axismnt017"
+                type="axis.mvc.control.modal.Axismnt017Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismnt017.jsp"/>
+        </action>
+        <action path="/modal_axisimpr002"
+                type="axis.mvc.control.modal.Axisimpr002Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisimpr002.jsp"/>
+        </action>
+        <action path="/modal_axisimpr003"
+                type="axis.mvc.control.modal.Axisimpr003Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisimpr003.jsp"/>
+        </action>
+        <action path="/modal_axismnt019"
+                type="axis.mvc.control.modal.Axismnt019Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismnt019.jsp"/>
+        </action>
+        <action path="/modal_axismnt020"
+                type="axis.mvc.control.modal.Axismnt020Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismnt020.jsp"/>
+        </action>
+        <action path="/modal_axismnt021"
+                type="axis.mvc.control.modal.Axismnt021Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismnt021.jsp"/>
+        </action>
+        <action path="/modal_axisusu008"
+                type="axis.mvc.control.modal.Axisusu008Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisusu008.jsp"/>
+        </action>
+        <action path="/modal_axisctr195"
+                type="axis.mvc.control.modal.Axisctr195Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr195.jsp"/>
+        </action>
+        <action path="/modal_axisctr197"
+                type="axis.mvc.control.modal.Axisctr197Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr197.jsp"/>
+        </action>
+        <action path="/modal_axisctr198"
+                type="axis.mvc.control.modal.Axisctr198Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr198.jsp"/>
+        </action>
+        <action path="/modal_axisctr199"
+                type="axis.mvc.control.modal.Axisctr199Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr199.jsp"/>
+        </action>
+        <!--******************************** INSPECCIONES ************************************************** -->
+        <action path="/modal_axisins001"
+                type="axis.mvc.control.modal.Axisins001Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisins001.jsp"/>
+        </action>
+        <!--******************************** LISTADOS ************************************************** -->
+        <action path="/modal_axislist005"
+                type="axis.mvc.control.modal.Axislist005Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axislist005.jsp"/>
+        </action>
+        <!--****************************************  Mantenimiento de subtablas ***************************************************-->
+        <action path="/modal_axismnt024"
+                type="axis.mvc.control.modal.Axismnt024Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismnt024.jsp"/>
+        </action>
+        <action path="/modal_axismnt025"
+                type="axis.mvc.control.modal.Axismnt025Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismnt025.jsp"/>
+        </action>
+        <action path="/modal_axismnt027"
+                type="axis.mvc.control.modal.Axismnt027Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axismnt027.jsp"/>
+        </action>
+        <action path="/modal_axispro052"
+                type="axis.mvc.control.modal.Axispro052Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro052.jsp"/>
+        </action>
+        <!--******************************** BPM ************************************************** -->
+        <action path="/modal_axisctr213"
+                type="axis.mvc.control.modal.Axisctr213Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr213.jsp"/>
+        </action>
+	<!--******************************Gestión de campañas*****************************************-->
+        <action path="/modal_axisage009" type="axis.mvc.control.modal.Axisage009Action" parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage009.jsp"/>
+        </action>
+        <action path="/modal_axisage011" type="axis.mvc.control.modal.Axisage011Action" parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisage011.jsp"/>
+        </action>
+        <action path="/modal_axisctr999" type="axis.mvc.control.modal.Axisctr999Action" parameter="operation"  scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr999.jsp"/>
+        </action>
+	<!--******************************Gestión de PMD*****************************************-->
+	    <action path="/modal_axisrea042" type="axis.mvc.control.modal.Axisrea042Action" parameter="operation"  scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea042.jsp"/>
+        </action>
+         <action path="/modal_axisrea043" type="axis.mvc.control.modal.Axisrea043Action" parameter="operation"  scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea043.jsp"/>
+        </action>
+         <action path="/modal_axisrea044" type="axis.mvc.control.modal.Axisrea044Action" parameter="operation"  scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea044.jsp"/>
+        </action>
+ <!--******************************** Mandatos ************************************************** -->
+        <action path="/modal_axisman001"
+                type="axis.mvc.control.modal.Axisman001Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisman001.jsp"/>
+        </action>
+        <action path="/modal_axisman006"
+                type="axis.mvc.control.modal.Axisman006Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisman006.jsp"/>
+        </action>
+  <!--******************************** Días de gracia ****************************************** -->
+        <action path="/modal_axisadm086"
+                type="axis.mvc.control.modal.Axisadm086Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm086.jsp"/>
+        </action>
+		   <action path="/modal_axisctr503"
+                type="axis.mvc.control.modal.Axisctr503Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr503.jsp"/>
+        </action>
+		
+	 <!--******************************Autoliquidaciones*****************************************-->
+        <action path="/modal_axisage029" type="axis.mvc.control.modal.Axisage029Action" parameter="operation" scope="request">
+          <forward name="form" path="/WEB-INF/jsp/modal/axisage029.jsp"/>
+        </action>   
+		<action path="/modal_axisage032" type="axis.mvc.control.modal.Axisage032Action" parameter="operation" scope="request">
+          <forward name="form" path="/WEB-INF/jsp/modal/axisage032.jsp"/>
+        </action>   
+    <action path="/modal_axisage034" type="axis.mvc.control.modal.Axisage034Action" parameter="operation" scope="request">
+          <forward name="form" path="/WEB-INF/jsp/modal/axisage034.jsp"/>
+        </action>   
+    
+ <action path="/modal_axisadm091"
+                type="axis.mvc.control.modal.Axisadm091Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm091.jsp"/>
+   </action>   
+   
+   <action path="/modal_axisadm092"
+                type="axis.mvc.control.modal.Axisadm092Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm092.jsp"/>
+   </action>  
+   
+   <action path="/modal_axisadm090a"
+                type="axis.mvc.control.modal.Axisadm090aAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm090a.jsp"/>
+   </action> 
+   
+   <action path="/modal_axisadm090b"
+                type="axis.mvc.control.modal.Axisadm090bAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm090b.jsp"/>
+   </action>  
+   
+   <!--******************************** [axisadm093a] (NUEVA) pantalla de búsqueda de póliza ************************************************** -->
+        <action path="/modal_axisadm093a" type="axis.mvc.control.modal.Axisadm093aAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm093a.jsp"/>
+        </action>
+        
+         <!--******************************** [axisadm093b] (NUEVA) pantalla de búsqueda de personas general ************************************************** -->
+        <action path="/modal_axisadm093b" type="axis.mvc.control.modal.Axisadm093bAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm093b.jsp"/>
+        </action>
+   
+    <!--***************************Reembolsos Transferencias Modales**********************-->
+        <action path="/modal_axiscob001a"
+                type="axis.mvc.control.modal.Axiscob001aAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscob001a.jsp"/>
+        </action>
+        
+        <action path="/modal_axiscob001b"
+                type="axis.mvc.control.modal.Axiscob001bAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscob001b.jsp"/>
+        </action>
+        
+        <action path="/modal_axiscob001c"
+                type="axis.mvc.control.modal.Axiscob001cAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscob001c.jsp"/>
+        </action>
+        <action path="/modal_axiscob001d"
+                type="axis.mvc.control.modal.Axiscob001dAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscob001d.jsp"/>
+        </action>
+        
+        <action path="/modal_axisadm094a"
+                type="axis.mvc.control.modal.Axisadm094aAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm094a.jsp"/>
+        </action>
+        
+        <action path="/modal_axiscaj020"
+                type="axis.mvc.control.modal.Axiscaj020Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscaj020.jsp"/>
+        </action>
+		
+		 <action path="/modal_axisadm094b"
+                type="axis.mvc.control.modal.Axisadm094bAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm094b.jsp"/>
+        </action>
+        
+   		<!--***********************************************************************-->
+<action path="/modal_axisadm095a"
+                type="axis.mvc.control.modal.Axisadm095aAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm095a.jsp"/>
+        </action>    
+		<action path="/modal_axisper042"
+	type="axis.mvc.control.modal.Axisper042Action"
+	parameter="operation" scope="request">
+	<forward name="form" path="/WEB-INF/jsp/modal/axisper042.jsp"/>
+</action>
+
+<action path="/modal_axisusu009"
+    type="axis.mvc.control.modal.Axisusu009Action"
+    parameter="operation" scope="request">
+    <forward name="form" path="/WEB-INF/jsp/modal/axisusu009.jsp"/>
+</action>
+
+<action path="/modal_axisper041"
+	type="axis.mvc.control.modal.Axisper041Action"
+	parameter="operation" scope="request">
+	<forward name="form" path="/WEB-INF/jsp/modal/axisper041.jsp"/>
+</action>
+<action path="/modal_axisctr230"
+		type="axis.mvc.control.modal.Axisctr230Action"
+		parameter="operation" scope="request">
+	<forward name="form" path="/WEB-INF/jsp/modal/axisctr230.jsp"/>
+</action>
+<action path="/modal_axissinMessage"
+		type="axis.mvc.control.modal.AxissinMessageAction"
+		parameter="operation" scope="request">
+	<forward name="form" path="/WEB-INF/jsp/modal/axissinMessage.jsp"/>
+</action>
+<!-- ******************** Transferencias Retenidas *************************** -->
+        <action path="/modal_axisadm097"
+                type="axis.mvc.control.modal.Axisadm097Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm097.jsp"/>
+        </action>
+ <!-- ******************** calculafecha *************************** -->
+        <action path="/modal_axiscalculafecha"
+                type="axis.mvc.control.modal.AxiscalculafechaAction"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscalculafecha.jsp"/>
+        </action>
+        
+ <!-- ******************** Detalle riesgo *************************** -->
+        <action path="/modal_axisctr044"
+                type="axis.mvc.control.modal.Axisctr044Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr044.jsp"/>
+        </action>        
+ <!-- ******************** SIN_TRAMITACION_JUDICIAL *************************** -->
+        <action path="/modal_axissin068"
+                type="axis.mvc.control.modal.Axissin068Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin068.jsp"/>
+        </action>
+		<action path="/modal_axissin082"
+                type="axis.mvc.control.modal.Axissin082Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin082.jsp"/>
+        </action>
+        <action path="/modal_axissin069"
+                type="axis.mvc.control.modal.Axissin069Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin069.jsp"/>
+        </action>
+        <action path="/modal_axissin066"
+                type="axis.mvc.control.modal.Axissin066Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin066.jsp"/>
+        </action>
+        <action path="/modal_axissin067"
+                type="axis.mvc.control.modal.Axissin067Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin067.jsp"/>
+        </action>
+		<action path="/modal_axiscga001"
+            type="axis.mvc.control.modal.Axiscga001Action" parameter="operation"
+            scope="request">
+		<forward name="form" path="/WEB-INF/jsp/modal/axiscga001.jsp"/>
+		</action>
+		<action path="/modal_axiscga002"
+            type="axis.mvc.control.axis.Axiscga002Action" parameter="operation"
+            scope="request">
+		<forward name="form" path="/WEB-INF/jsp/axis/axiscga002.jsp"/>
+		</action>	
+		<action path="/modal_axiscga003"
+            type="axis.mvc.control.modal.Axiscga003Action" parameter="operation"
+            scope="request">
+      <forward name="form" path="/WEB-INF/jsp/modal/axiscga003.jsp"/>
+    </action>
+	<action path="/modal_axisadm202"
+                type="axis.mvc.control.modal.Axisadm202Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm202.jsp"/>
+        </action>
+        
+        <action path="/modal_axisadm206"
+                type="axis.mvc.control.modal.Axisadm206Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm206.jsp"/>
+        </action>
+        <action path="/modal_axissin065"
+                type="axis.mvc.control.modal.Axissin065Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin065.jsp"/>
+        </action>
+	<action path="/modal_axisctr508"
+                type="axis.mvc.control.modal.Axisctr508Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr508.jsp"/>
+        </action>
+        <action path="/modal_axisrea050"
+                type="axis.mvc.control.modal.Axisrea050Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea050.jsp"/>
+        </action>
+<!-- ******************** ficha financiera *************************** -->
+        <action path="/modal_axisfic001"
+                type="axis.mvc.control.modal.Axisfic001Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfic001.jsp"/>
+        </action>
+        <action path="/modal_axisfic002"
+                type="axis.mvc.control.modal.Axisfic002Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfic002.jsp"/>
+        </action>
+        <action path="/modal_axisfic003"
+                type="axis.mvc.control.modal.Axisfic003Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfic003.jsp"/>
+        </action>  
+        <action path="/modal_axisfic004"
+                type="axis.mvc.control.modal.Axisfic004Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfic004.jsp"/>
+        </action>
+        <action path="/modal_axisfic005"
+                type="axis.mvc.control.modal.Axisfic005Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfic005.jsp"/>
+        </action>
+        <action path="/modal_axisfic006"
+                type="axis.mvc.control.modal.Axisfic006Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfic006.jsp"/>
+        </action>   
+		<action path="/modal_axisfic007"
+                type="axis.mvc.control.modal.Axisfic007Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisfic007.jsp"/>
+        </action>
+			<action path="/modal_axissin064"
+			type="axis.mvc.control.modal.Axissin064Action"
+			parameter="operation" scope="request">
+		<forward name="form" path="/WEB-INF/jsp/modal/axissin064.jsp"/>
+        </action>	
+	<action path="/modal_axisper050"
+                type="axis.mvc.control.modal.Axisper050Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper050.jsp"/>
+        </action>
+		<action path="/modal_axispro055"
+                type="axis.mvc.control.modal.Axispro055Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axispro055.jsp"/>
+        </action> 
+		<action path="/modal_axisrea053"
+                type="axis.mvc.control.modal.Axisrea053Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea053.jsp"/>
+        </action>
+		<action path="/modal_axisrea054"
+                type="axis.mvc.control.modal.Axisrea054Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea054.jsp"/>
+        </action>
+		<action path="/modal_axisrea055"
+                type="axis.mvc.control.modal.Axisrea055Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea055.jsp"/>
+        </action>
+        <action path="/modal_axisrea056"
+                type="axis.mvc.control.modal.Axisrea056Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea056.jsp"/>
+        </action>
+		<action path="/modal_axisadm104"
+                type="axis.mvc.control.modal.Axisadm104Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm104.jsp"/>
+        </action>
+        <action path="/modal_axissin074"
+                type="axis.mvc.control.modal.Axissin074Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin074.jsp"/>
+        </action>
+        <action path="/modal_axissin075"
+                type="axis.mvc.control.modal.Axissin075Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin075.jsp"/>
+        </action>
+		<action path="/modal_axisrea046"
+                type="axis.mvc.control.modal.Axisrea046Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisrea046.jsp"/>
+        </action>
+    <action path="/modal_axisgca014"
+            type="axis.mvc.control.modal.Axisgca014Action" parameter="operation"
+            scope="request">
+      <forward name="form" path="/WEB-INF/jsp/modal/axisgca014.jsp"/>
+    </action>
+        <action path="/modal_axisper051"
+                type="axis.mvc.control.modal.Axisper051Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper051.jsp"/>
+        </action>
+        <action path="/modal_axisper052"
+                type="axis.mvc.control.modal.Axisper052Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisper052.jsp"/>
+        </action>
+		<!-- *********TCS_827 - ACL - 29/02/2019 Se agrega axiscga004*************** -->
+		<action path="/modal_axiscga004"
+                type="axis.mvc.control.modal.Axiscga004Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axiscga004.jsp"/>
+		</action> 
+		 <action path="/modal_axissin083"
+                type="axis.mvc.control.modal.Axissin083Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin083.jsp"/>
+        </action>
+        <action path="/modal_axissin084" 
+                type="axis.mvc.control.modal.Axissin084Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axissin084.jsp"/>
+        </action>
+        <!-- Added for IAXIS-4191 PK-26/06/2019 Start -->
+        <action path="/modal_axisadm201"
+                type="axis.mvc.control.modal.Axisadm201Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisadm201.jsp"/>
+        </action>
+        <!-- Added for IAXIS-4191 PK-26/06/2019 End -->
+		
+		<!-- Added for IAXIS-14960 bhjb-22/01/2021 Start -->
+        <action path="/modal_axisctr511"
+                type="axis.mvc.control.modal.Axisctr511Action"
+                parameter="operation" scope="request">
+            <forward name="form" path="/WEB-INF/jsp/modal/axisctr511.jsp"/>
+        </action>
+        <!-- Added for IAXIS-14960 bjhb-22/01/2021 End -->
+		
+		<!-- Cambio para IAXIS-CIFIN : Start -->
+         <action path="/modal_axisper054"
+            	type="axis.mvc.control.modal.Axisper054Action"
+            	parameter="operation" scope="request">
+        	<forward name="form" path="/WEB-INF/jsp/modal/axisper054.jsp"/>
+        </action>
+        <!-- Cambio para IAXIS-CIFIN : Start -->
+		 
+		
+  </action-mappings>
+</struts-config>

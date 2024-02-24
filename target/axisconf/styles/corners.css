@@ -1,0 +1,36 @@
+.corners{display:block}
+.corners *{
+  display:block;
+  height:1px;
+  overflow:hidden;
+  font-size:.01em;
+  background:#0066CC}
+.corners1{
+  margin-left:3px;
+  margin-right:3px;
+  padding-left:1px;
+  padding-right:1px;
+  border-left:1px solid #91bde9;
+  border-right:1px solid #91bde9;
+  background:#3f8cd8}
+.corners2{
+  margin-left:1px;
+  margin-right:1px;
+  padding-right:1px;
+  padding-left:1px;
+  border-left:1px solid #e5eff9;
+  border-right:1px solid #e5eff9;
+  background:#3083d5}
+.corners3{
+  margin-left:1px;
+  margin-right:1px;
+  border-left:1px solid #3083d5;
+  border-right:1px solid #3083d5;}
+.corners4{
+  border-left:1px solid #91bde9;
+  border-right:1px solid #91bde9}
+.corners5{
+  border-left:1px solid #3f8cd8;
+  border-right:1px solid #3f8cd8}
+.cornersfg{
+  background:#0066CC}

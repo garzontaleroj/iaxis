@@ -1,0 +1,294 @@
+/*
+*  Fichero: displaytag.css
+*  @author <a href = "mailto:echristen@csi-ti.com">Elmar Christen</a> 
+*  @author <a href = "mailto:xgallego@csi-ti.com">Xavi Gallego</a> 
+*  
+*  Estilos genéricos para el contenido del JSTL displaytag
+*
+*  Fecha: 22/10/2007
+*/
+.displayspace{
+    width:100%;
+    height: expression( this.scrollHeight > 119 ? "120px" : "auto" );
+    max-height: 120px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid #DDDDDD; 
+    border-right-width: 0px;
+}
+
+.displayspacewomax{
+    width:100%;
+    height: expression( this.scrollHeight > 119 ? "120px" : "auto" );
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid #DDDDDD; 
+    border-right-width: 0px;
+}
+
+.displayspaceGrande { 
+    width:100%;
+    height: expression( this.scrollHeight > 219 ? "220px" : "auto" );
+    max-height:220px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid #DDDDDD;
+}
+
+.displayspaceProductos {
+    width:100%;
+    height: expression( this.scrollHeight > 229 ? "230px" : "auto" );
+    max-height:230px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid #DDDDDD;
+}
+
+.displayspacePersonas {
+    width:100%;
+    height: expression( this.scrollHeight > 339 ? "340px" : "auto" );
+    max-height:270px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid #DDDDDD;
+}
+
+.displayspaceModalGenerico {
+    width:100%;
+    height: expression( this.scrollHeight > 219 ? "260px" : "auto" );
+    max-height:220px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid #DDDDDD;
+}
+
+.displayspaceMaximo {
+   width:100%;
+   height: expression( this.scrollHeight > 349 ? "350px" : "auto" );
+   max-height:350px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid #DDDDDD;
+}
+
+.displayspaceOver, .displayspaceGrandeOver, .displayspaceProductosOver,
+.displayspacePersonasOver, .displayspaceModalGenericoOver, .displayspaceMaximoOver{ 
+    display:inline;
+    position:absolute; 
+    width:93%;
+    *width:91.5%; /*IE7*/
+    _width:99%; /*IE6 solo*/
+    /*border:1px solid #88979E;*/
+    background-color:#ffffff;
+    filter:alpha(opacity=35);
+    -moz-opacity:.35;
+    opacity:.35;
+}
+
+.displayspaceOver{
+    height:160px;
+}
+
+.displayspaceGrandeOver{
+    height:220px;
+}
+
+.displayspaceProductosOver{
+    height:230px;
+}
+
+.displayspacePersonasOver{
+    height:340px;
+}
+
+.displayspaceModalGenericoOver{
+    height:260px;
+}
+
+.displayspaceMaximoOver{
+    height:350px;
+}
+
+.dsptgpagebanner {
+    width:100%;
+    padding: 0px;
+    border: 1px solid #DDDDDD;
+    border-right:0px;
+}
+
+.dsptgpagelinks {
+    width:100%;
+    padding: 0px;
+    border: 1px solid #DDDDDD;
+    border-left:0px;
+}
+
+table.dsptgtabletop{
+    margin-left: 20px;
+  }  
+  
+table.dsptgtable {
+    width:100%;
+    background-position: center;
+    margin-left: 0px; /* 27px*/
+    border: solid #DDDDDD;
+    
+    border-top-width: 0px; /*LCF antes a 1*/
+    border-right-width: 0px;
+    border-bottom-width: 0px; /*LCF antes a 1*/
+    border-left-width: 0px; 
+    
+    background-color:#ffffff;
+    padding:0px; /*antes 10*/
+    
+}
+.seccion_informacion{
+    border: 1px solid #006000;
+    background-color:#ffffff; 
+    border-top-width: 2px; 
+    border-right-width: 2px;
+    border-bottom-width: 2px; 
+    border-left-width:2px; 
+    position:absolute;
+    width:488px;
+    height:120px;
+    top:1;
+    left:75px;
+    visibility:hidden;
+    
+}
+
+
+
+.odd {
+    
+    font-size: 10px;
+    line-height: 22px;
+}
+
+.even {   
+    background-color:#FDFDFD;
+    font-size: 10px;
+    line-height: 22px;
+}
+
+.headwidth5{
+    width:5%;
+}
+.headwidth10 {
+    width:10%;
+}
+.headwidth20 {
+    width:20%;
+}
+.headwidth30 {
+    width:30%;
+}
+
+/* cabcecera de grids */
+.sortable {
+    text-align:left;    
+    padding-left: 10px;
+    font-size: 10px; /*LCF*/
+    /*line-height: 10px; /*14 */
+    /*background-color:#FF9900;*/ /*Naranja fuerte */
+    color: black;//#000000;
+    background-color:#dedede;
+    
+    border: 1px solid #DDDDDD;
+    border-top-color: #DDDDDD;
+    border-bottom-color: #DDDDDD;
+    border-left-color: #DDDDDD;
+    border-right-color: #DDDDDD;
+    
+    border-top-width: 0px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 1px;
+
+    border-top-style: solid;
+    border-bottom-style: solid;  
+    border-right-style: solid;
+    border-left-style: solid;  
+}
+
+.gridpagebanner{
+    margin:0 0 0 30px;
+}
+
+.gridpagelinks{
+    font-size:11px;
+}
+
+.gridEven td, .gridNotEven td, .gridpagebanner{
+    font-size:11px;
+    line-height: 15px;
+}
+
+.gridEvenHover td, .gridNotEvenHover td, .gridpagebanner{
+    font-size:11px;
+    line-height: 15px;
+}
+
+.dspText{
+    text-align:left;
+    padding-left:10px;
+    padding-right:5px;
+}
+
+.dspTextAviso{
+    text-align:left;
+    padding-left:10px;
+    padding-right:5px;
+    color:red;
+}
+
+.dspIcons{
+    text-align:center;
+}
+
+.dspNumber{
+    text-align:right;
+    padding-right:10px;
+    padding-left:5px;
+}
+
+.emptyTextGrid{
+    padding:5px 0 5px 0;
+    font-weight:bold;
+    text-align:center;
+    font-size:11px;
+}
+
+.gridEven td, .gridNotEven td, .gridempty td{
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #DDDDDD;
+}
+
+.gridNotEven td, .gridempty td{
+    /*background-color:#0041AE; */  /*naranja claro*/ /*LCF*/
+    background-color:#eeeeee;   /*verde claro*/
+}
+
+
+.gridEvenHover td, .gridNotEvenHover td{
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #DDDDDD;
+    background-color:#cc6633;
+}
+
+.fixed{  /* .dataTable propiedad */
+position: relative;
+right:0px;
+top:0px;
+}
+
+/* Cambios de IAXIS-2058 */
+.displayspaceGrandeNew { 
+    width:100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid #DDDDDD;
+}

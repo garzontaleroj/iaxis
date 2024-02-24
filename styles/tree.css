@@ -1,0 +1,28 @@
+/*
+*  Fichero: pie.css
+*  @author <a href = "mailto:lcalvo@csi-ti.com">Luz Calvo</a> 
+*  @author <a href = "mailto:xgallego@csi-ti.com">Xavi Gallego</a> 
+*  
+*  Estilos genéricos para el árbol de fórmulas
+*
+*  Fecha: 01/04/2008
+*/
+
+.tree {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding: 10px;
+	white-space: nowrap;
+}
+.tree img {
+	border: 0px;
+	height: 18px;
+	vertical-align: text-bottom;
+}
+.tree a {
+	color: #000;
+	text-decoration: none;
+}
+.tree a:hover {
+	color: #345373;
+}

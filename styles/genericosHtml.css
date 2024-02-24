@@ -1,0 +1,68 @@
+/*
+*  Fichero: genericosHtml.css
+*  @author <a href = "mailto:lcalvo@csi-ti.com">Luz Calvo</a> 
+*  @author <a href = "mailto:xgallego@csi-ti.com">Xavi Gallego</a> 
+*  
+*  Estilos genéricos para los tags de HTML
+*
+*  Fecha: 22/10/2007
+*/
+/* correspowidth: 768pndiente a aplicatiu */
+
+
+
+body {
+
+	margin: 0px;
+	padding: 0px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #333333;
+	font-size: 11px;
+	line-height: 15px;
+	background-color: #FFFFFF;
+        height:100%;
+        width:100%;
+        .width:98.2%;
+        /*overflow-x: hidden;*/
+	/*  text-align: center; */
+        /* background-image:url("../images/fondo.jpg");
+        background-position: bottom right;
+        background-repeat: no-repeat;*/
+}
+
+iframe {
+    margin: 0;
+    /*border: 0;*/
+}
+
+th a{
+	cursor: pointer;
+	text-decoration: underline;
+	color: black; /* #333333; */
+}
+
+a {
+	cursor: pointer;
+	text-decoration: underline;
+	font-size: 11px;
+	color: #000000;
+}
+
+/* correspondiente a html */
+table {
+    width:100%;
+    /*border:0;*/
+    cell-spacing: 0px;
+}
+
+.base {
+    width:100%;
+    /*border:0;*/
+    cell-spacing: 0px;
+    background-color: #C0C0C0;
+}
+
+td { 
+    vertical-align: top;
+    padding:0 0 0 0; /*el seg = 2px;*/ 
+}

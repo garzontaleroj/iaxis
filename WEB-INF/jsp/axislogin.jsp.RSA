@@ -1,0 +1,189 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@ page contentType="text/html;charset=windows-1252" errorPage="/WEB-INF/jsp/axiserror.jsp"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib uri="/WEB-INF/tld/axis-1.tld" prefix="axis"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ page import="axis.util.ConversionUtil" %>
+<c:if test="${empty sessionScope.__locale}">
+    <% 
+    session.setAttribute("__locale", ConversionUtil.getDefaultLocale()); 
+    %>
+</c:if>
+<c:if test="${empty sessionScope.__locale_formato_numerico}">
+    <% session.setAttribute("__locale_formato_numerico", ConversionUtil.getLocaleFormatoNumerico()); %>
+</c:if>
+<fmt:setLocale value="${sessionScope.__locale}" />
+<fmt:setBundle basename="axis.bundle.Mensajes"/>
+<html>
+<head>
+    <title><fmt:message key="aplicacion.nombre.corto"/></title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles/genericosHtml.css" />
+    <link rel="stylesheet" href="styles/cabecera.css" />
+    <link rel="stylesheet" href="styles/axisnt.css" />
+    <c:import url="./include/carga_framework_js.jsp" />
+    <script language="Javascript">
+    function f_but_aceptar() {
+     var CEMPRESA=objDom.getValorPorId("CEMPRES");
+            
+            if (!objUtiles.estaVacio(CEMPRESA)){
+                if (CEMPRESA == 3){
+                     if (navigator.userAgent.indexOf("MSIE") != -1) {
+                                var wshell       = new ActiveXObject("WScript.Shell");
+                                var clientname   = wshell.ExpandEnvironmentStrings("%CLIENTNAME%")
+                                var computername = wshell.ExpandEnvironmentStrings("%COMPUTERNAME%")	
+                                var myComputername = ( clientname.indexOf("%") != 0 ? clientname : (computername.indexOf("%") != 0 ? computername : "") );
+                                
+                                if (myComputername=="Console") { // si es "Console", se ha de poner el %computername%
+                                	//alert("myComputername actual:"+myComputername)
+                                	myComputername=computername;
+                                	//alert("myComputername nuevo:"+myComputername)
+                                }
+                                
+                                
+                                // Establecer el valor del hidden "PUESTO"
+                                document.getElementById("PUESTO").value = myComputername;
+                        }
+                }
+            }
+        
+        if (objValidador.validaEntrada()) {
+            objUtiles.ejecutarFormulario("axis.do","aceptar",document.miForm, "_self");
+        }
+        
+    }
+    function f_onkeypress(event){
+        var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+        if (keyCode==13) {
+          f_but_aceptar();  
+        }
+    }
+    function f_onload() {
+    
+        revisarEstilos();
+        var validez = 30;
+        var caduca = new Date();
+        caduca.setTime(caduca.getTime() + (validez*24*60*60*1000));
+        setCookie ('iaxis_CMENU', null, caduca);
+       
+    }
+    function setCookie(name, value, expires, path, domain, secure) {
+            document.cookie = name + "=" + escape(value) +
+            ((expires == null) ? "" : "; expires=" + expires.toGMTString()) +
+            ((path == null) ? "" : "; path=" + path) +
+            ((domain == null) ? "" : "; domain=" + domain) +
+            ((secure == null) ? "" : "; secure");
+    }
+    </script>
+</head>
+<body onload="f_onload()">
+    <form name="miForm" method="POST" action="" >
+    <input type="hidden" name="operation" value="" />
+    <c:if test="${fn:length(__formdata.listValores.lstempresas) == 1  && !empty __formdata.listValores.lstempresas}">
+    <input type="hidden" name="CEMPRES" value="${__formdata.listValores.lstempresas[0].CEMPRES}" />
+    </c:if>
+    <input type="hidden" name="PUESTO" id="PUESTO" value="${__formdata.PUESTO}" />
+    <input type="hidden" name="OFICINA" value="${__formdata.OFICINA}" />
+    <c:if test="${!empty param.CONTINUE}">
+     <input type="hidden" name="CONTINUE" value="${param.CONTINUE}">
+    </c:if> 
+    <table class="basetitulo" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td style="font-size:11px;color:white">
+                            [axislogin] <b>
+                        </td>
+                        <td style="font-size: 14px;text-align:right;vertical-align: middle;color:white">
+                            <b><fmt:message key="aplicacion.nombre" /></b>&nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <div class="separador">&nbsp;</div>
+
+    <!-- Area de campos  -->
+    <table class="mainTableDimensions base" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+            <td>
+               <!-- Titulo seccion -->
+               <div class="titulo"> 
+                    <img  src="images/flecha.gif"/>
+                    <fmt:message key="aplicacion.nombre" /> - <fmt:message key="1000330"/>
+               </div>
+               <!-- Campos -->
+                <table class="seccion" align="center">
+                    <tr>
+                        <td >
+                            <!-- Área 1 -->
+                            <table class="area" align="center">
+                                <tr>
+                                <c:choose>
+                                    <c:when test="${fn:length(__formdata.listValores.lstempresas) > 1 && !empty __formdata.listValores.lstempresas}">
+                                       <th style="width:33.33%; height:0px"></th>
+                                       <th style="width:33.33%; height:0px"></th>
+                                       <th style="width:33.33%; height:0px"></th>
+                                    </c:when>
+                                    <c:otherwise>
+                                        <th style="width:50%; height:0px"></th>
+                                        <th style="width:50%; height:0px"></th>
+                                    </c:otherwise>
+                                </c:choose>
+                                </tr>
+                                <tr>
+                                    <td class="titulocaja">
+                                          <b><fmt:message key="100894"/></b>
+                                    </td>
+                                    <td class="titulocaja">
+                                        <b><fmt:message key="1000085"/></b>
+                                    </td>
+                                    <c:if test="${fn:length(__formdata.listValores.lstempresas) > 1 && !empty __formdata.listValores.lstempresas}">
+                                    <td class="titulocaja">
+                                        <b><fmt:message key="101619"/></b>
+                                    </td>
+                                    </c:if>
+                                </tr>
+                                <tr>
+                                    <td class="campocaja">
+                                        <input type="text" class="campo campotexto" name="USUARIO" id="USUARIO" xtitle="USUARIO" obligatorio="true" value="${__formdata['USUARIO']}" style="width:100px" 
+                                                title="<fmt:message key="100894"/>"/>
+                                    </td>
+                                    <td class="campocaja">
+                                        <input type="password" class="campo campotexto" name="PWD" id="PWD" xtitle="PWD" obligatorio="true" value="${__formdata['PWD']}" style="width:100px" onkeypress="f_onkeypress(event)"
+                                                title="<fmt:message key="1000085"/>"/>
+                                    </td>
+                                    <c:if test="${fn:length(__formdata.listValores.lstempresas) > 1 && !empty __formdata.listValores.lstempresas}">
+                                    <td class="campocaja">
+                                       <select name="CEMPRES" id="CEMPRES" size="1" class="campowidthselect campo campotexto" style="width:90%;">
+                                   <%--     <option value="<%= Integer.MIN_VALUE %>"> - <fmt:message key="1000348"/> - </option>--%>
+                                        <c:forEach var="element" items="${__formdata.listValores.lstempresas}">
+                                            <option value = "${element.CEMPRES}" 
+                                            <c:if test="${element.CEMPRES == __formdata.CEMPRES}"> selected </c:if> />
+                                                ${element.TEMPRES} 
+                                            </option>
+                                        </c:forEach>
+                                    </select>
+                                    </td>
+                                    </c:if>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr> 
+    </table>
+    <!--Area campos -->
+    <c:import url="./include/botonera_nt.jsp"><c:param name="__botones">aceptar</c:param></c:import>
+    </form>
+    <div id="reloj" align="center" class="reloj"></div>
+    <c:import url="./include/mensajes.jsp" />
+   
+</body>
+</html>

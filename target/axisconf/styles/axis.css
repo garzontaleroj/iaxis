@@ -1,0 +1,348 @@
+/*
+*  Fichero: axis.css
+*  @author <a href = "mailto:lcalvo@csi-ti.com">Luz Calvo</a> 
+*  @author <a href = "mailto:xgallego@csi-ti.com">Xavi Gallego</a> 
+*  
+*  Estilos genéricos para el contenido del aplicativo (cuerpo del frame)
+*
+*  Fecha: 22/10/2007
+*/
+/* force right scrollbar */
+
+.area { /* ecg */
+    width: 95%;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+.
+.areaTotal{
+    width: 100%;
+}
+
+.campos { /* ecg */
+    height: 350px;
+}
+
+.top{
+    margin-top:10px;
+}
+
+.mainTableDimensions{
+    width:95%;
+    height:330px;
+}
+
+.mainModalDimensions{
+    width:95%;
+    height:230px;
+}
+
+.topModal{
+    margin-top:10px;
+}
+
+.base {
+    margin-left:30px;
+    .margin-left:14px;
+    background-color: #FFFFFF;
+}
+
+.baseTitulo {
+    margin-left:30px;
+    /*margin-left: 3%;*/
+    background-color: #FFFFFF;
+}
+
+.separador {
+    font-size: 1px;
+    line-height: 1px;
+    height: 10px;
+    border-color:#FF6600;
+    background-color: #FFFFFF;       
+}
+
+.bloque {         /* Antiguo Bloc se usa en cabecera.jsp -> <div class="Bloc" id="Fondo" style="width: 100%"> */
+    margin-right: 20px;
+    margin-left: 20px;
+        
+}
+.campo {
+    border: 1px solid #DDDDDD;
+    font-size: 11px;
+    color: #333333;
+    padding: 1px;
+    background-color: #EEEEEE;
+    margin: 0px 0px 0px 0px;
+    width: 99%;
+}
+.campotexto {
+    font-size: 11px;
+    color: #666666;
+    text-align: left;
+    background-color: #FFEFB5;  
+}
+
+.campowidthselect{
+    width:120px;
+}
+
+.campowidthinput{
+    width:116px;
+}
+
+.campowidthinputmedium{
+    width:80px;
+}
+
+.campowidthselectmedium{
+    width:90px;
+}
+
+.campowidthinputsmall{
+    width:40px;
+}
+
+.campowidthselectsmall{
+    width:50px;
+}
+
+.campowidthinputbig, .campowidthselectbig{
+    width:100%;
+}
+
+.campowidthinputmiddlepercent, .campowidthselectmiddlepercent{
+    width:50%;
+}
+
+/* generalizar anchos */
+.campowidth{
+width:118px;
+}
+.campowidthmedium{
+width:90px;
+}
+.campowidthsmall{
+width:50px;
+}
+.campowidthpercentbig{
+width:100%;
+}
+.campowidthpercent{
+width:50%;
+}
+/* generalizar anchos */
+
+.campodisabled {
+    background-color: #DDDDDD;  
+    color: #333333;
+}
+
+.camponumerico_ob {
+    border: 1px solid black;
+    font-size: 11px;
+    color: #666666;
+    padding: 1px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: right;
+    background-color: #F7FFD6;
+}
+
+.campotexto_ob {
+    background-color: #F7FFD6;
+}
+
+.camponumerico {
+    text-align: right;
+}
+
+.boton {
+    border: 0px solid #00AA00;
+    background-image:url(../images/boton2.jpg);
+    height: 20px;
+    background-color:transparent;
+    font-size: 11px;
+    color: #FFFFFF; /* #6C0604;  */
+    width:100px;
+       
+}
+
+.seccion {
+    border-style: solid; /* ecg */
+    border-width: 1px; /* ecg */
+    border-color: #EEEEEE; /* ecg */
+    background-color: #FFFFFF;
+}
+.campocaja {
+    font-size: 10px;
+    line-height: 14px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 1px;
+    border-left-width: 2px;
+    padding-right: 20px;
+   
+    border-top-color: #FFFFFF;
+    border-right-color: #EEEEEE;
+    border-bottom-color: #EEEEEE;
+    border-left-color: #EEEEEE;
+    
+    /*padding-left: 10px;*/
+    border-top-style: solid;
+    
+}
+
+.tituloseccion{
+width:100%;
+}
+
+.dim100{
+    width:100px;
+}
+
+.titulo {
+    font-size: 12px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-bottom-style: solid;
+    border-top-color: #DDDDDD;
+    border-right-color: #DDDDDD;
+    border-bottom-color: #00AA00;  /* Antes #DDDDDD */
+    border-left-color: #FFFFFF;
+    line-height: 20px;
+    background-color: #FFFFFF;
+    color: #FF9900; /*  #FF8400;*/
+    font-weight: bold;	
+}
+
+.notitulo{
+    font-size: 12px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-bottom-style: solid;
+    border-top-color: #CCCCCC;
+    border-right-color: #CCCCCC;
+    border-bottom-color: #CCCCCC;  /* Antes #DDDDDD */
+    border-left-color: #CCCCCC;
+    line-height: 20px;
+    background-color: #FFFFFF;
+    color: #FF9900; /*  #FF8400;*/
+    font-weight: bold;	
+}
+
+.titulocampo{
+    text-align:left;
+    vertical-align:middle;
+}
+
+/* modal estandard */
+
+.modal1 {
+    margin:0px;
+    height:1px;
+    width:1px;
+    top:1px;
+    left:1px;
+    visibility:hidden;
+    display:none;
+    position:absolute;
+    background-image:url('imgaxis/Logo.gif');
+    background-repeat:repeat;
+    filter:alpha(opacity=25);  /*para explorer */
+    opacity:.25;  /* para  firefox */
+}
+
+.modal2 {
+    height:1px;
+    width:1px;
+    top:1px;
+    left:1px;
+    visibility:hidden;
+    display:none;
+    position:absolute;
+}
+
+.styletable{
+    background-color: #84D600; 
+    border:2px solid silver;
+}
+/*  Ampliacion propia */
+.reloj{
+    visibility:hidden; 
+    margin:0px; 
+    background:transparent ;
+    position:absolute; 
+    border:0px; 
+    top:0px; 
+    left:0px; 
+    width:0px; 
+    height:0px; 
+    z-index:1;
+}
+
+.txt_aplicativo{    
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	float: right;
+	margin: 10px 10px 0 0;
+	text-align: right;
+	line-height: 30px;
+	width: 400px;
+}
+
+.tituloCuerpo{
+    padding:2px 10px 2px 0;
+    background-color:#006633;
+    color:#FFFFFF;
+}
+
+.cabecera {
+	width: 95%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #006000;    /* rgb(0,96,0); */
+	height: 50px;
+}
+
+/*Para fijar la posición de los modales y de los mensajes de info, para cuando la pantalla se despliegue con un scroll*/
+.positionFixed{
+    position: absolute;
+}
+
+body> .positionFixed,
+form> .positionFixed{
+    position:fixed;
+    top:1px;
+    left:1px;
+}
+
+.fixedProperties{
+    _left:-20px;
+}
+
+#mensajes_div { position: absolute; left: 0px; bottom: 0px; }
+
+body > div#mensajes_div { position: fixed; left: 0px; bottom: 0px;}
+
+div#mensajes_div {
+right: auto; bottom: auto;
+left: 0px;
+/*_top solo para IE6 o inferiores*/
+_top: expression( ( 0 - mensajes_div.offsetHeight + ( document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight ) + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}
+
+.precarga_fija { position: absolute;}
+
+body > div.precarga_fija { position: fixed; left: 0px; top: 0px;}
+
+div.precarga_fija {
+left: 0px;
+/*_top solo para IE6 o inferiores*/
+_top: expression( ( 0 + ( ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop ) ) + 'px' );
+}

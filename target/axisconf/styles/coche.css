@@ -1,0 +1,33 @@
+.lineacompleta {display:block; cursor:pointer}
+#mapacoche, #coche01, #coche02, #coche03, #coche04, #coche05, #coche06, #coche07 {display:block; width:120px; height:223px; background: url(../images/coche3.gif); position:absolute; margin:0 auto}
+#mapacoche a {color:#000; font-size:0.7em;}
+#mapacoche dt span {display:none}
+#mapacoche a#uno, #mapacoche a#dos, #mapacoche a#tres, #mapacoche a#cuatro, #mapacoche a#cinco, #mapacoche a#seis, #mapacoche a#siete, #coche01.coche01, #coche02.coche02, #coche03.coche03, #coche04.coche04, #coche05.coche05, #coche06.coche06, #coche07.coche07 {display:block; position:absolute; overflow:hidden;}
+#mapacoche a#uno:hover, #mapacoche a#dos:hover, #mapacoche a#tres:hover, #mapacoche a#cuatro:hover, #mapacoche a#cinco:hover, #mapacoche a#seis:hover, #mapacoche a#siete:hover, #coche01.coche01, #coche02.coche02, #coche03.coche03, #coche04.coche04, #coche05.coche05, #coche06.coche06, #coche07.coche07 {color:#FFF; background:transparent url(../images/coche3.gif) no-repeat }
+#mapacoche a#uno {top:0px; left:25px; height:45px; width:70px;}
+#mapacoche a#uno:hover, #coche01.coche01 {background-position: -135px 0px; }
+#coche01.coche01 {height:45px; width:70px; z-index:900; margin-left:25px}
+
+#mapacoche a#dos {top:0px; left:1px; height:118px; width:59px;}
+#mapacoche a#dos:hover, #coche02.coche02 {background-position: -221px 0px; }
+#coche02.coche02 {height:118px; width:59px; z-index:900; margin-left:1px}
+
+#mapacoche a#tres {top:0px; left:62px; height:118px; width:62px;}
+#mapacoche a#tres:hover, #coche03.coche03 {background-position:-282px 0px; }
+#coche03.coche03 {height:118px; width:62px; z-index:900; margin-left:62px}
+
+#mapacoche a#cuatro {top:114px; left:1px; height:101px; width:57px;}
+#mapacoche a#cuatro:hover, #coche04.coche04 {background-position: -351px -114px; }
+#coche04.coche04 {height:101px; width:57px; z-index:900; margin:114px 0 0 1px}
+
+#mapacoche a#cinco {top:114px; left:63px; height:103px; width:62px;}
+#mapacoche a#cinco:hover, #coche05.coche05 {background-position: -413px -114px; }
+#coche05.coche05 {height:103px; width:62px; z-index:900; margin:114px 0 0 63px}
+
+#mapacoche a#seis {top:178px; left:25px; height:42px; width:73px;}
+#mapacoche a#seis:hover, #coche06.coche06 {background-position: -135px -178px; }
+#coche06.coche06 {height:42px; width:73px; z-index:900; margin:178px 0 0 25px}
+
+#mapacoche a#siete {top:71px; left:32px; height:108px; width:61px;}
+#mapacoche a#siete:hover, #coche07.coche07 {background-position:-142px -71px; }
+#coche07.coche07 {height:108px; width:61px; z-index:900; margin:71px 0 0 32px}

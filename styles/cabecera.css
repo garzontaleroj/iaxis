@@ -1,0 +1,99 @@
+/*
+*  Fichero: cabecera.css
+*  @author <a href = "mailto:lcalvo@csi-ti.com">Luz Calvo</a> 
+*  @author <a href = "mailto:xgallego@csi-ti.com">Xavi Gallego</a> 
+*  
+*  Estilos genéricos para el contenido del aplicativo (cabecera del frame)
+*
+*  Fecha: 22/10/2007
+*/
+
+/*
+
+.fondo {
+	background-color: #006000;
+	height: 50px;
+
+}
+
+.cabecera {
+	width: 778px;
+        margin:0 auto 0 auto; 
+	background-color: #006000;
+	height: 50px;
+}
+
+.logo {
+	width: 43px;
+        height:43px;
+	float: left;
+        filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=scale src='images/logo.png');
+}
+
+.logo[class] {
+	width: 43px;
+        height:43px;
+	float: left;
+        background-image:url('../images/logo.png');
+}
+*/
+
+.txt_cabecera {    
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+	float: right;
+	margin: 10px 10px 0 0;
+	text-align: right;
+	line-height: 30px;
+	width: 400px;
+}
+
+/*
+.barra_margen {               
+	width: 778px;
+	margin:0 auto 0 auto; 
+       
+}
+
+.barra {        
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-top-color: #EEEEEE;
+	border-right-color: #EEEEEE;
+	border-bottom-color: #EEEEEE;
+	border-left-color: #EEEEEE;
+	font-size: 11px;
+	line-height: 24px;
+	margin-left: 1%;
+	background-color: #FF8400;   Antes FB8304 
+	text-align: left;
+
+}
+
+.span_texto{
+    color:#000000; 
+    font-weight:bold;
+}
+
+#idioma{
+    border: 1px solid #DDDDDD;
+    font-size: 9px;
+    color: #666666;
+    padding: 1px;
+    margin:0px
+}
+
+.efecto {
+	font-size: 1px;
+	line-height: 1px;
+	background-color: #99CC96;
+	height: 5px;
+        width: 94%;
+	/ * margin-right: 5px;* /
+	margin-left: 1%;
+}
+*/
